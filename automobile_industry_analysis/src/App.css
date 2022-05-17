@@ -1,0 +1,26 @@
+.nav{
+  font-size: 22px;
+  font-weight: 900;
+  
+  font-family: 'Quicksand', sans-serif;
+  /* color : rgb(42, 40, 40);
+  background-color: rgb(238, 235, 237); */
+  color : rgb(32, 98, 174);
+  background-color: rgb(111, 210, 252);
+  padding: 2px 30px;
+  box-shadow: 0px 5px 15px 1px lightgrey;
+  text-align: left;
+}
+.report{
+  margin: 20px;
+  padding : 20px;
+  height: 500px;
+  width: 700px;
+  box-shadow: 5px 10px 33px 2px lightgrey;
+  border-radius: 40px;
+}
+.flexme{
+  display: flex; 
+  margin: 25px;
+  padding: 10px; 
+}
