@@ -1,26 +1,80 @@
 .nav{
   font-size: 22px;
   font-weight: 900;
-  
+  display: flex;
   font-family: 'Quicksand', sans-serif;
   /* color : rgb(42, 40, 40);
   background-color: rgb(238, 235, 237); */
   color : rgb(32, 98, 174);
   background-color: rgb(111, 210, 252);
-  padding: 2px 30px;
+  padding: 13px 30px;
   box-shadow: 0px 5px 15px 1px lightgrey;
   text-align: left;
 }
 .report{
-  margin: 20px;
+  /* margin: 20px; */
   padding : 20px;
-  height: 500px;
-  width: 700px;
+  height: 900px;
+  width: 100%;
+  box-sizing: border-box;
   box-shadow: 5px 10px 33px 2px lightgrey;
-  border-radius: 40px;
+  border-radius: 10px;
+}
+.head{
+  display: flex;
+  
+  box-shadow: 5px 10px 33px 2px lightgrey;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 .flexme{
-  display: flex; 
-  margin: 25px;
-  padding: 10px; 
+  height: 500px;
+  
 }
+.header-text{
+   /* padding: 1em; */
+  margin-left: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  /* background-color: red; */
+}
+.App{
+  margin: 10px 35px;
+}
+.buttons{
+  padding: 15px;
+}
+.fake-buttons{
+  float: right;
+  display: flex;
+  margin-left: auto;
+}
+.invisible{
+  background-color: rgb(111 210 252);
+  margin-left: 3px;
+  border: 0;
+  cursor: pointer;
+}
+.svg{
+  max-width: 700px;
+}
+.vectors{
+  display : flex;
+  box-sizing: border-box;
+  
+}
+@media screen and (max-width: 992px) {
+  .vectors{
+    display: block;
+  }
+}
+.typography{
+  text-align: center;
+  /* background-color: pink; */
+  padding: 20px 0px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: 10%;
+} 

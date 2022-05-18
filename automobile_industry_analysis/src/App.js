@@ -1,26 +1,20 @@
 import './App.css';
 import Navbar from "./components/Navbar.js"
 import Data from "./components/Data.js"
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
-      {/* <Data /> */}
-      {/* <PowerBI /> */}
-      <div className='flexme'>
-        <iframe className='report' title="sample data analysis - Page 4" 
-        width="300" height="113.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjYwNTczNzgtNTI1Zi00YzllLWI2OTEtMThlY2ZkMjhhNjBjIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameborder="0" allowFullScreen="true"></iframe>
-        <iframe className='report' title="sample data analysis - Page 4" 
-        width="300" height="113.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjYwNTczNzgtNTI1Zi00YzllLWI2OTEtMThlY2ZkMjhhNjBjIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameborder="0" allowFullScreen="true"></iframe>
+      <div className="App">
+        <Header />
+        {/* <Data /> */}
+        {/* <PowerBI /> */}
+        <div className='flexme'>
+        <iframe className='report' title="Price" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmFlMjgwNzQtNDM1Mi00OTE3LTgzNWEtODZhNmZhN2Y0NTRlIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe></div>
       </div>
-      {/* <div className='flexme'>
-        <iframe className='report' title="sample data analysis - Page 4" 
-        width="300" height="113.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjYwNTczNzgtNTI1Zi00YzllLWI2OTEtMThlY2ZkMjhhNjBjIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameborder="0" allowFullScreen="true"></iframe>
-        <iframe className='report' title="sample data analysis - Page 4" 
-        width="300" height="113.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjYwNTczNzgtNTI1Zi00YzllLWI2OTEtMThlY2ZkMjhhNjBjIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameborder="0" allowFullScreen="true"></iframe>
-      </div> */}
-    </div>
+    </>
   );
 }
 
