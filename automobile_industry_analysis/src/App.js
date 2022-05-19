@@ -12,7 +12,7 @@ function App() {
         {/* <Data /> */}
         {/* <PowerBI /> */}
         <div className='flexme'>
-        <iframe className='report' title="primary features" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNjY1NmE4ZjEtN2M3Mi00YmMwLWE5NmYtMDdkNmJiMDJkNTRlIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe></div>
+        <iframe className='report' title="primary features" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=602bf297-b610-4dfd-8524-108530073caa&autoAuth=true&ctid=a4f23476-d02f-42da-9cac-0cecba572ce9&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe></div>
       </div>
     </>
   );
