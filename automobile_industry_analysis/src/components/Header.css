@@ -16,12 +16,14 @@
     text-align: center;
     /* background-color: pink; */
     padding: 20px 10px;
-    max-width: 400px;
+    max-width: 500px;
     box-sizing: border-box;
     margin-left: 8%;
     margin-right: 8%;
 }
-
+.buttons{
+    margin-top: 20px;
+}
 @media screen and (max-width: 992px) {
     .vectors {
         display: block;
