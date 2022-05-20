@@ -1,28 +1,4 @@
-.nav{
-  font-size: 22px;
-  font-weight: 900;
-  display: flex;
-  font-family: 'Quicksand', sans-serif;
-  /* color : rgb(42, 40, 40);
-  background-color: rgb(238, 235, 237); */
-  color : rgb(9 0 93);
-  background-color: rgb(145 179 250);
-  padding: 13px 30px;
-  box-shadow: 0px 0px 10px 3px rgb(218 228 255);
-  text-align: left;
-}
 
-.head{
-  display: flex;
-  /* max-width: fit-conte;
-   */
-  box-sizing: border-box;
-  box-shadow: 0px 0px 18px 0.5px rgb(218 228 255);
-  border-radius: 10px;
-  text-align: left;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 .App{
   margin: 10px 35px;
 }
@@ -31,17 +7,8 @@
     margin: 5px 15px;
   }
 }
+
+
 .buttons{
   padding: 15px;
-}
-.fake-buttons{
-  float: right;
-  display: flex;
-  margin-left: auto;
-}
-.invisible{
-  background-color: rgb(145 179 250);
-  margin-left: 3px;
-  border: 0;
-  cursor: pointer;
 }

@@ -1,0 +1,13 @@
+.footer{
+    height: 40px;
+    padding: 14px;
+    background-color: rgb(145 179 250);
+    color: rgb(9 0 93);
+    text-align: right;
+    font-size: 14px;
+}
+.footer_small{
+    color: rgb(9 0 93);
+    text-align: right;
+    font-size: 14px;
+}

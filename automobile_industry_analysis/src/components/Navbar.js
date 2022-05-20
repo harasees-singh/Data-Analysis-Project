@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import { BsPenFill } from 'react-icons/bs'
 import { AiFillHome } from 'react-icons/ai'
 import { FiSettings } from 'react-icons/fi'
+import "./Navbar.css"
 const useStyles = makeStyles((theme) => ({
     root: {
         textAlign: "center",

@@ -35,6 +35,17 @@
     /* padding: 10px 20px; */
     /* background-color: pink; */
 }
+.head{
+    display: flex;
+    /* max-width: fit-conte;
+     */
+    box-sizing: border-box;
+    box-shadow: 0px 0px 18px 0.5px rgb(218 228 255);
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
 @media screen and (max-width: 992px) {
     .vectors {
         display: block;

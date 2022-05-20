@@ -1,0 +1,10 @@
+.prediction_img{
+    max-width: 40vw;
+    border-radius: 10px;
+}
+.prediction_box{
+    display: flex;
+    box-shadow: 0px 0px 10px 3px rgb(218 228 255);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
