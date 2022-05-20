@@ -21,7 +21,7 @@ function Navbar() {
     return (
         <div className='nav'>
             <Typography variant="h4" component="h4">
-                Automobile Industry Analysis
+                Analysis Of The Automobile Industry
             </Typography>
             <div className='fake-buttons'>
                 <button type='button' className='invisible'><BsPenFill /></button>

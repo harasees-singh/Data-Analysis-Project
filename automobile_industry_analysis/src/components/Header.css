@@ -1,7 +1,11 @@
 .vectors-top {
     max-width: 60vw;
+    border-radius: 10px;;
 }
-
+.head{
+    border-radius: 10px;
+    /* background-color: pink; */
+}
 .photos {
     display: grid;
 }
@@ -14,15 +18,22 @@
 
 .typography {
     text-align: center;
-    /* background-color: pink; */
-    padding: 20px 10px;
-    max-width: 500px;
+    background-color: rgb(218 228 255);
+    color: rgb(9 0 93);
+    margin-top: 40px;
+    padding: 20px 30px;
+    max-width: 600px;
     box-sizing: border-box;
     margin-left: 8%;
     margin-right: 8%;
+    margin-bottom: 40px;
+    border-radius: 40px;
+
 }
 .buttons{
     margin-top: 20px;
+    /* padding: 10px 20px; */
+    /* background-color: pink; */
 }
 @media screen and (max-width: 992px) {
     .vectors {

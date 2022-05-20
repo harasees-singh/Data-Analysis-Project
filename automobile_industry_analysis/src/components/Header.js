@@ -4,9 +4,7 @@ import Typography from '@material-ui/core/Typography';
 // import robot1 from '../assets/robot-finding-data.svg'
 // import robot2 from '../assets/robot-doing-data-analysis.svg'
 import "./Header.css"
-import vector from '../assets/tribe.jpg'
-import top from '../assets/final_top.jpg'
-import down from '../assets/final_down.jpg'
+import top from '../assets/images/final_top.jpg'
 function Header() {
     return (
         <div className='head'>
@@ -17,7 +15,7 @@ function Header() {
                 </div>
 
                 <div className='typography'>
-                    <Typography variant="h4" component="h4" className='text'>
+                    <Typography variant="h4" component="h4">
                         this is our insanely valuable dataset it consists of data of 200 something cars and u will be blown away
                         by the amount of
                     </Typography>
