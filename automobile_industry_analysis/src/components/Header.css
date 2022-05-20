@@ -1,0 +1,48 @@
+.vectors-top {
+    max-width: 60vw;
+}
+
+.photos {
+    display: grid;
+}
+
+.vectors {
+    display: flex;
+    box-sizing: border-box;
+    /* max-width: 600px; */
+}
+
+.typography {
+    text-align: center;
+    /* background-color: pink; */
+    padding: 20px 10px;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+@media screen and (max-width: 992px) {
+    .vectors {
+        display: block;
+        box-sizing: content-box;
+        text-align: left;
+    }
+
+    .typography {
+        text-align: left;
+        max-width: 100vw;
+        box-sizing: content-box;
+    }
+    .vectors{
+        /* background-color: pink; */
+        margin-left: 10px;
+    }
+    .vectors-top{
+        box-sizing: border-box;
+        max-width: 85vw;
+    }
+    .buttons{
+        text-align: right;
+    }
+}

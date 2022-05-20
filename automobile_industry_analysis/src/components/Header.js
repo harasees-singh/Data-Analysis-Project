@@ -1,28 +1,31 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import robot1 from '../assets/robot-finding-data.svg'
-import robot2 from '../assets/robot-doing-data-analysis.svg'
+// import robot1 from '../assets/robot-finding-data.svg'
+// import robot2 from '../assets/robot-doing-data-analysis.svg'
+import "./Header.css"
 import vector from '../assets/tribe.jpg'
+import top from '../assets/final_top.jpg'
+import down from '../assets/final_down.jpg'
 function Header() {
     return (
         <div className='head'>
-            <div className='header-text'>
 
-                <div className='vectors'>
-                    <img className='svg' src={vector} alt="svg" />
-                    {/* <img className='svg' src={robot2} alt="queen" /> */}
-                    <div className='typography'>
-                        <Typography variant="h3" component="h4">
-                            this is our insanely valuable dataset it consists of data of 200 something cars and u will be blown away
-                            by the amount of information it holds.
-                        </Typography>
-                        <div className='buttons'>
-                            <Button variant="contained" color="primary" className='buttons-dataset'
-                                href="https://1drv.ms/x/s!AkSxQvIzIp7WkYwOehfepRWpe56ZTQ?e=G2KtMA">
-                                Data Set
-                            </Button>
-                        </div>
+            <div className='vectors'>
+                <div className='photos'>
+                    <img className='vectors-top' src={top} alt="svg" />
+                </div>
+
+                <div className='typography'>
+                    <Typography variant="h4" component="h4" className='text'>
+                        this is our insanely valuable dataset it consists of data of 200 something cars and u will be blown away
+                        by the amount of
+                    </Typography>
+                    <div className='buttons'>
+                        <Button variant="contained" color="primary" className='buttons-dataset'
+                            href="https://1drv.ms/x/s!AkSxQvIzIp7WkYwOehfepRWpe56ZTQ?e=G2KtMA">
+                            Data Set
+                        </Button>
                     </div>
                 </div>
             </div>

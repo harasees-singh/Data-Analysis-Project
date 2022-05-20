@@ -1,7 +1,7 @@
-curbweight : high curbweight usually leads to 
+1.) curbweight : high curbweight usually leads to 
 less mileage and more horsepower.
 
-enginesize : 34,140 price corres to 200 enginesize and 300 horsepower.
+2.) enginesize : 34,140 price corres to 200 enginesize and 300 horsepower.
 citympg -> 16, highwaympg -> 23
 
 if enginesize is around 300, price increases, less mileage, less horsepower.
@@ -10,21 +10,21 @@ ideal enginesize 200 for best of all worlds
 
 wagon with enginesize 130 is providing the best horsepower with optimal price and mileage.
 
-cylinder number : 3 cylinder cars giving exceptional mileage at lower prices but very less horsepower.
+3.) cylinder number : 3 cylinder cars giving exceptional mileage at lower prices but very less horsepower.
 12 cylinder sedans show a trend of high av. horsepower for a slight drop in city mileage in comparison to 8 cylinder cars
 in the same price segment as 8 cylinder cars.
 
-carbody : hatchbacks are the best for mileage and price, for relatively lower horsepower.
+4.) carbody : hatchbacks are the best for mileage and price, for relatively lower horsepower.
 
 wagon seems to be outdated with no feature standing out.
 
-eniginetype : ohc engine type for middle class
+5.) eniginetype : ohc engine type for middle class
 dohcv seems to be the go for best horsepower.
 
-drivewheel : hatchbacks and sedans show a completely opposite trend with peak rpm. for sedans fwd drivewheel produces the peak rpm but for 
+6.) drivewheel : hatchbacks and sedans show a completely opposite trend with peak rpm. for sedans fwd drivewheel produces the peak rpm but for 
 hatchbacks it produces the lowest peak rpm and instead rwd records highest peak rpm.
 4wd seems like a good fit for all almost all body types providing a good amount of horsepower and mileage.
 
-fuelsystem : cars using mpfi tend to be more expensive than others, offering higher hp.
+7.) fuelsystem : cars using mpfi tend to be more expensive than others, offering higher hp.
 
 4bbl is not looking like a good option because of poor average mileage and below average horsepower at a rather high price. For example spfi costs similar to 4bbl and delivers similar hp but way better mileage.

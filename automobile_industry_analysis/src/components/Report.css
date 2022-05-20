@@ -1,0 +1,50 @@
+.report{
+    padding : 20px;
+    height: 90vh;
+    width: 66%;
+    box-sizing: border-box;
+    box-shadow: 5px 0px 33px 2px lightgrey;
+    border-radius: 10px;
+  }
+.container{
+    display: flex;
+    margin-bottom: 20px;
+}
+.card{
+    /* background-color: pink; */
+    display: grid;
+    box-sizing: border-box;
+    width: 30vw;
+    /* padding-left: 20px; */
+    margin-left: auto;
+    margin-right: 0;
+}
+.description{
+    /* background-color: red; */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* height: 40%; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 33px 2px lightgrey;
+}
+.info{
+    box-shadow: 5px 0px 33px 2px lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+    height: 93.5%;
+}
+@media screen and (max-width: 992px){
+.report{
+    width: 94vw;
+    /* width: 100vw; */
+    max-width: 100vw;
+    height: 600px;
+    /* margin-right: 20px; */
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.container{
+    display: block;
+}
+}
