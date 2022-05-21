@@ -1,7 +1,6 @@
 import './Report.css'
 import Info from './Info.js'
 function Report(props){
-    console.log(props)
     return(
         <div className='container'>
             {props.report}

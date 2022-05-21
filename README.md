@@ -13,6 +13,12 @@ Please note that you will need node.js installed on your machine to run this pro
 
 ### Used Fuzzy Set and Rules to compute various Market Segments
 
+## K-Means algorithms for classifying the cars into various segments
+
+1. used one-hot encoding for car body types
+2. normalised price, mileage and hp
+3. 
+
 ## Sales Prediction with Linear Regression
 
 

@@ -1,4 +1,4 @@
-## Middle Class and Small Family
+## Middle Class 
 
 ### high mileage > 0.3, low price > 0.4
 
@@ -14,7 +14,7 @@
 2. high horsepower over good mileage
 3. high price not an issue
 
-## Highclass Families
+## Family 
 
 ### med mileage > 0.2, med hp > 0.5
 
@@ -22,7 +22,7 @@
 2. good hp preferred with average mileage.
 3. high price not an issue
 
-## Upper Middle Class
+## Upper Class
 
 ### med price > 0.3, med mileage > 0.2 or high mileage > 0.1, med hp > 0.2
 

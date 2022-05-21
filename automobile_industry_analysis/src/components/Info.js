@@ -13,13 +13,7 @@ import "./Info.css";
 import { Pagination, Navigation } from "swiper";
 
 function Info(props) {
-    console.log(props)
     return (
-        // <div>
-        //     {props.list.map((put)=>{
-        //         return(<div>{put}</div>)
-        //     })}
-        // </div>
         <Swiper
             pagination={{
                 type: "fraction",
