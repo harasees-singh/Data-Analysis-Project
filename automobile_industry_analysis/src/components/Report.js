@@ -1,4 +1,4 @@
-import './Report.css'
+import './CSS/Report.css'
 import Info from './Info.js'
 function Report(props){
     return(

@@ -1,9 +1,9 @@
 .text{
     max-width: 70%;
-    font-size: 30px;
+    font-size: 20px;
 }
 @media screen and (max-width: 992px){
     .text{
-        font-size: 20px;
+        font-size: 10px;
     }
 }

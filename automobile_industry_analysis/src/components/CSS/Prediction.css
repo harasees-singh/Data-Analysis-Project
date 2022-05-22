@@ -8,10 +8,15 @@
     border-radius: 10px;
     margin-bottom: 20px;
 }
+.predictSales{
+    padding: 20px;
+    background-color: rgb(218 228 255);
+    border-radius: 10px;
+}
 .prediction_text{
     text-align: center;
     height: fit-content;
-    background-color: rgb(218 228 255);
+    display: block;
     font-size: 30px;
     color: rgb(9 0 93);
     margin-top: 40px;
@@ -21,7 +26,6 @@
     margin-left: auto;
     margin-right: 8%;
     margin-bottom: 40px;
-    border-radius: 10px;
 }
 @media screen and (max-width: 992px){
    

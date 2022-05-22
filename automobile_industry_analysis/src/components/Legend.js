@@ -1,5 +1,5 @@
 import background from "../assets/images/background.jpg"
-import './Legend.css'
+import './CSS/Legend.css'
 function Legend(){
     return(
         <div className="legend">
