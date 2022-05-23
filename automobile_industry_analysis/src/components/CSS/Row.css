@@ -1,0 +1,35 @@
+.row{
+    display: flex;
+    align-items: center;
+    /* background-color: pink; */
+    padding: 4px;
+}
+.key{
+
+    /* color: rgb(9 0 93);; */
+    width: fit-content;
+    margin-right: auto;
+    padding-right: 40px;
+    /* background-color: pink; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.value{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    max-width: 18vw;
+    font-size: 16px;
+    text-align: right;
+    /* background-color: purple; */
+}
+@media screen and (max-width: 792px){
+    .key{
+        font-size: 20px;
+        margin-right: 0;
+    }
+    .value{
+        font-size: 18px; 
+        margin-left: auto;
+    }
+}

@@ -6,7 +6,7 @@ function Report(props){
             {props.report}
             <div className='card'>
                 <div className='description'>
-                    {props.description}
+                    <div className='description_content'>{props.description}</div>
                 </div>
                 <div className='info'>
                     <Info {...props}/>

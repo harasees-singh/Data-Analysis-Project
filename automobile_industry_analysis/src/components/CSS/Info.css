@@ -1,9 +1,16 @@
 .text{
-    max-width: 70%;
-    font-size: 20px;
+    max-width: 75%;
+    font-size: 18px;
+    text-align: left;
+    margin: 5px;
+}
+@media screen and (max-width: 1291px){
+    .text{
+        font-size: 13px;
+    }
 }
 @media screen and (max-width: 992px){
     .text{
-        font-size: 10px;
+        font-size: 18px;
     }
 }

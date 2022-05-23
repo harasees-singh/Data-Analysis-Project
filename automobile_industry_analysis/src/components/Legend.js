@@ -1,9 +1,36 @@
-import background from "../assets/images/background.jpg"
 import './CSS/Legend.css'
-function Legend(){
-    return(
+import Row from './Row'
+import EngineTypes from '../assets/Inferences/EngineTypes';
+import FuelSystemTypes from '../assets/Inferences/FuelSystemTypes';
+import DrivewheelTypes from '../assets/Inferences/DrivewheelTypes';
+function Legend() {
+    return (
         <div className="legend">
-            <img className="back-img" src={background} />
+            {/* <div className='legend_heading'>Legend</div> */}
+            <div className='legend_container'>
+                <p className='title'>Drivewheel Types</p>
+                {DrivewheelTypes.map((pair) => (
+
+                    <Row label={pair.label} value={pair.value} />
+
+                ))}
+            </div>
+            <div className='legend_container'>
+                <p className='title'>Engine Types</p>
+                {EngineTypes.map((pair) => (
+
+                    <Row label={pair.label} value={pair.value} />
+
+                ))}
+            </div>
+            <div className='legend_container'>
+                <p className='title'>Fuel System Types</p>
+                {FuelSystemTypes.map((pair) => (
+
+                    <Row label={pair.label} value={pair.value} />
+
+                ))}
+            </div>
         </div>
     )
 }
