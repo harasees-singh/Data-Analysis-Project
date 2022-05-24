@@ -1,10 +1,18 @@
+.buttons-dataset{
+    margin-right: auto;
+    /* background-color: pink; */
+    /* align-items: left; */
+    text-align: left;
+    padding-left: 7px;
+}
 .prediction_img{
     border-radius: 10px;
     max-height: 40vw;
 }
 .Sales{
-    max-width: 40vw;
+    max-width: 20vw;
     padding: 10px;
+    padding-bottom: 55px;
 }
 .prediction_box{
     display: flex;
@@ -52,6 +60,7 @@
 .prediction_input_fields{
     /* background-color: pink; */
     max-width: 20vw;
+    display: flex;
 }
 .prediction_input_container{
     /* background-color: pink; */

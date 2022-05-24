@@ -19,12 +19,13 @@ import aspirationtypes from '../assets/Inferences/AspirationType'
 import doornumbertypes from '../assets/Inferences/DoornumberTypes'
 import carbodytypes from '../assets/Inferences/CarbodyTypes'
 import drivewheeltypes from "../assets/Inferences/DrivewheelTypes";
+import cylindertypes from "../assets/Inferences/CylinderType";
 import { svgIconClasses } from "@mui/material";
 
 function Prediction() {
-    
+
     /////////////////////////////////////////
-    
+
     const [values, setValues] = React.useState({
         curbweight: 0,
         enginesize: 0,
@@ -33,7 +34,7 @@ function Prediction() {
         mileage: 0,
         price: 0,
     });
-    
+
     const handleChange = (prop) => (event) => {
         setValues({ ...values, [prop]: event.target.value });
     };
@@ -74,12 +75,17 @@ function Prediction() {
         setDrivewheel(event.target.value)
     }
 
+    const [cylindernumber, setCylinder] = React.useState(4);
+    const handleCylinder = (event) => {
+        setCylinder(event.target.value)
+    }
+
     const [sales, setSales] = React.useState(0);
 
     const handleSales = (event) => {
         setSales(event);
     };
-    const width_ = '20vw';
+    const width_ = '25vw';
     return (
         <div className='prediction_box'>
             <div className="prediction_heading">
@@ -87,14 +93,11 @@ function Prediction() {
                 <div className="predictSales">
                     PREDICT SALES
                     <div className="predictSales_text">
-                        Input the car specifications and we will predict it's annual sales for you !
+                        Input the car specifications and we will predict it's annual sales for you ! Just fill in the car specifications and click on 'PREDICT SALES'
 
                     </div>
-                    <Button variant="contained" color="primary" className='buttons-dataset' onClick={()=>{
-                        setSales(15)
-                    }}>
-                        Predict
-                    </Button>
+
+
                 </div>
             </div>
             <div className='prediction_text'>
@@ -106,11 +109,19 @@ function Prediction() {
                     <Form option={doornumber} handleChange={handleDoornumber} menuops={doornumbertypes} name={"doornumber"} />
                     <Form option={carbody} handleChange={handleCarbody} menuops={carbodytypes} name={"carbody"} />
                     <Form option={drivewheel} handleChange={handleDrivewheel} menuops={drivewheeltypes} name={"drivewheel"} />
+                    <Form option={cylindernumber} handleChange={handleCylinder} menuops={cylindertypes} name={"cylinder count"} />
+                    <div className='buttons-dataset'>
+                        <Button variant="contained" color="primary"  onClick={() => {
+                            setSales(15)
+                        }}>
+                            Predict
+                        </Button>
+                    </div>
                 </div>
                 <div className="prediction_input_fields">
-                    <Box sx={{ display: 'flex', flexWrap: 'wrap'}}>
+                    <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
                                     value={values.curbweight}
                                     onChange={handleChange('curbweight')}
@@ -122,7 +133,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
                                     value={values.enginesize}
                                     onChange={handleChange('enginesize')}
@@ -134,7 +145,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
                                     value={values.horsepower}
                                     onChange={handleChange('horsepower')}
@@ -146,7 +157,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
                                     value={values.peakrpm}
                                     onChange={handleChange('peakrpm')}
@@ -158,7 +169,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
                                     value={values.mileage}
                                     onChange={handleChange('mileage')}
@@ -170,7 +181,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
                                     value={values.price}
                                     onChange={handleChange('price')}
@@ -183,14 +194,12 @@ function Prediction() {
 
                         <div className="Sales">
                             <TextField
-                                disabled
                                 id="outlined"
                                 label="Predicted Sales"
                                 value={sales}
                                 className='Sales_box'
                             />
                         </div>
-                        
                     </Box>
                 </div>
             </div >
