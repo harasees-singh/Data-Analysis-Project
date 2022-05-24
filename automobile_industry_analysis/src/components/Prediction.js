@@ -79,6 +79,7 @@ function Prediction() {
     const handleSales = (event) => {
         setSales(event);
     };
+    const width_ = '20vw';
     return (
         <div className='prediction_box'>
             <div className="prediction_heading">
@@ -109,7 +110,7 @@ function Prediction() {
                 <div className="prediction_input_fields">
                     <Box sx={{ display: 'flex', flexWrap: 'wrap'}}>
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: '25vw' }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
                                 <OutlinedInput
                                     value={values.curbweight}
                                     onChange={handleChange('curbweight')}
@@ -121,7 +122,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: '25vw' }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
                                 <OutlinedInput
                                     value={values.enginesize}
                                     onChange={handleChange('enginesize')}
@@ -133,7 +134,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: '25vw' }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
                                 <OutlinedInput
                                     value={values.horsepower}
                                     onChange={handleChange('horsepower')}
@@ -145,7 +146,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: '25vw' }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
                                 <OutlinedInput
                                     value={values.peakrpm}
                                     onChange={handleChange('peakrpm')}
@@ -157,7 +158,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: '25vw' }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
                                 <OutlinedInput
                                     value={values.mileage}
                                     onChange={handleChange('mileage')}
@@ -169,7 +170,7 @@ function Prediction() {
                         </div>
 
                         <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: '25vw' }} variant="outlined">
+                            <FormControl sx={{ m: 1, width: {width_} }} variant="outlined">
                                 <OutlinedInput
                                     value={values.price}
                                     onChange={handleChange('price')}

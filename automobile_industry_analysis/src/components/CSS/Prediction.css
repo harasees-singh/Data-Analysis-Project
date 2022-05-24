@@ -55,7 +55,8 @@
 }
 .prediction_input_container{
     /* background-color: pink; */
-    max-width: 20vw;
+    width: 19vw;
+    max-width: 18vw;
     box-sizing: border-box;
 }
 .prediction_heading{
