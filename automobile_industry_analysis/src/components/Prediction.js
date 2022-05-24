@@ -32,7 +32,8 @@ function Prediction() {
         enginesize: 0,
         horsepower: 0,
         peakrpm: 0,
-        mileage: 0,
+        citymileage: 0,
+        highwaymileage: 0,
         price: 0,
     });
 
@@ -118,7 +119,7 @@ function Prediction() {
                     <Form option={cylindernumber} handleChange={handleCylinder} menuops={cylindertypes} name={"cylinder count"} />
                     <div className='buttons-dataset'>
                         <Button variant="contained" color="primary"  onClick={() => {
-                            setSales(LinearRegression([doornumber, curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.mileage, values.mileage, values.price, ]))
+                            setSales(LinearRegression([doornumber, values.curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.mileage, values.citymileage, values.highwaymileage, values.price, fuel, aspiration, carbody, drivewheel, engine, fuelsystem]))
                         }}>
                             Predict
                         </Button>
@@ -177,14 +178,27 @@ function Prediction() {
                         <div className="prediction_Input_container">
                             <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
-                                    value={values.mileage}
-                                    onChange={handleChange('mileage')}
+                                    value={values.citymileage}
+                                    onChange={handleChange('citymileage')}
                                     endAdornment={<InputAdornment position="end">km / lt</InputAdornment>}
                                     className='inputfield'
                                 />
-                                <FormHelperText>Please enter mileage</FormHelperText>
+                                <FormHelperText>Please enter citymileage</FormHelperText>
                             </FormControl>
                         </div>
+
+                        <div className="prediction_Input_container">
+                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
+                                <OutlinedInput
+                                    value={values.highwaymileage}
+                                    onChange={handleChange('highwaymileage')}
+                                    endAdornment={<InputAdornment position="end">km / lt</InputAdornment>}
+                                    className='inputfield'
+                                />
+                                <FormHelperText>Please enter highwaymileage</FormHelperText>
+                            </FormControl>
+                        </div>
+
 
                         <div className="prediction_Input_container">
                             <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
