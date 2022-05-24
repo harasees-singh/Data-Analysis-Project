@@ -4,7 +4,7 @@ export default[
         description: "This report details how primary features like curbweight, engine type, carbody type, fuel system, etc. affect the secondary features like horsepower, mileage and price.",
 
 
-        list: ["High curbweight usually results in less mileage. Horsepower seems to increase with the curbweight of the car", 
+        list: ["High curbweight usually results in less mileage. High horsepower seems to add weight to the car but this trend breaks at around a curbweight of 3000kg.", 
         
         "Highway and City mileage show a decreasing trend with increasing engine size whereas horsepower more or less shows and increasing trend. Slicing the data shows that convertibles and hardtops show a dip in horsepower after engine size of 200 without any significant positive impact on mileage or price. Wagon with engine size 130 is providing the best horsepower and mileage combination.", 
         
@@ -23,9 +23,9 @@ export default[
 
     {
         id: 1,
-        description: "second report talks about the ",
+        description: "This report analyses how various features like price, mileage, horsepower and carbody type depend on the Customer Segment that the car is being targeted at.",
 
-        list: ["The 5 customer segments identified and the number of cars belonging to that particular segment is displayed by the pie chart. Regular I and Regular II are the cheaper segment cars and offer relatively better mileage aimed at the middle class, most of the Business cars are wagons, Luxury cars are aimed at the high class and the cars which don't fit into any of the above segments are put into 'No Segment' ",
+        list: ["The 5 customer segments identified and the number of cars belonging to that particular segment is displayed by the pie chart. Regular I and Regular II are the cheaper segment cars and offer relatively better mileage aimed at the middle class, most of the Business cars are wagons, Luxury cars are aimed at the high class and the cars which don't fit into any of the above segments are put into 'No Segment'. ",
         
         "Regular I consists of hatchbacks meanwhile Regular II consists of sedans only. Most of the Luxury cars are sedans and most Business cars are wagons. All the covertibles fall in the 'No Segment'. ohc is the dominant engine type in all the customer segments.",
         
@@ -41,7 +41,7 @@ export default[
 
     {
         id: 2,
-        description: "third report",
+        description: "This report uncovers the most popular car specifications in each Customer Segment by analysing the top selling cars in that particular Segment.",
         list: [
             
         "The top 10 cars sold 13 M units in total out of the 16 M total sales. Top 10 cars by sales cover all the Customer Segments except the 'No Segment'. **Please note that a specific car model is mapped to a single Car Segment only. In the graph the legend shows different Segments corresponding to the same car name to represent different car models which share the same name.**",
@@ -59,7 +59,7 @@ export default[
     },
     {
         id: 3,
-        description: "fourth report",
+        description: "This report analyses the changing sales trends of Customer Segments and different car specifications over the years (from 2018 to 2021)",
         list: [
             
         "While Regular I, Regular II and Luxury have maintained a consistent amount of sales percentage over the years, Business Segment seems to be growing steadily going from a sales percentage of 23 in2018 to 28 in 2021. On the other hand cars belonging to 'No Segment' are losing their share in sales rapidly going from 36% in 2018 to 21% in 2021 reinforcing the fact that customers need cars specific to their needs. Adjusting the price window reveals that 'No Segment' lost all it's sales after 2018 in the higher price bracket",
@@ -72,7 +72,7 @@ export default[
     },
     {
         id: 4,
-        description: "fifth report",
+        description: "This report analyses car sales at a global level, revealing growing car markets.",
         list: [
             
         "Highest car sales are recorded in China (21 M) followed by North America (14 M) in the year 2021", 

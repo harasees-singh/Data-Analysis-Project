@@ -28,12 +28,28 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 18px 0.5px rgb(218 228 255);
+    align-content: center;
+    display: flex;
 }
 .info{
     box-shadow: 0px 0px 18px 0.5px rgb(218 228 255);
     padding: 10px;
     border-radius: 10px;
     height: 64%;
+}
+.description_content{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    color: rgb(9 0 94);
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@media screen and (max-width: 1209px){
+    .description_content{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 992px){
     .report{
@@ -66,7 +82,7 @@
     }
     .description{
         position: relative;
-        font-size: 20px;
+        font-size: 30px;
         align-content: center;
         display: flex;
         width: 30vw;
@@ -75,8 +91,9 @@
         padding: 20px;
     }
     .description_content{
-        
-        margin-top: auto;
-        margin-bottom: auto;
+        font-size: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+    
 }
