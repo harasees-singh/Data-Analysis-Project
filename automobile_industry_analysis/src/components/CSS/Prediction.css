@@ -1,6 +1,10 @@
 .prediction_img{
-    max-width: 50vw;
     border-radius: 10px;
+    max-height: 40vw;
+}
+.Sales{
+    max-width: 40vw;
+    padding: 10px;
 }
 .prediction_box{
     display: flex;
@@ -9,24 +13,70 @@
     margin-bottom: 20px;
 }
 .predictSales{
+    margin-top: 60px;
     padding: 20px;
+    font-size: 30px;
+    height: fit-content;
+    width: 10vw;
     background-color: rgb(218 228 255);
     border-radius: 10px;
+    margin-right: auto;
+}
+.predictSales_text{
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 .prediction_text{
     text-align: center;
     height: fit-content;
-    display: block;
     font-size: 30px;
+    display: flex;
     color: rgb(9 0 93);
     margin-top: 40px;
     padding: 20px 30px;
-    max-width: 600px;
+    max-width: 30vw;
     box-sizing: border-box;
-    margin-left: auto;
+    /* margin-left: auto; */
     margin-right: 8%;
     margin-bottom: 40px;
 }
+.inputfield{
+    max-width: 20vw;
+    /* background-color: purple; */
+}
+.Sales_box{
+    /* background-color: purple; */
+    width: 15vw;
+}
+.prediction_input_fields{
+    /* background-color: pink; */
+    max-width: 20vw;
+}
+.prediction_input_container{
+    /* background-color: pink; */
+    max-width: 20vw;
+    box-sizing: border-box;
+}
+.prediction_heading{
+    display: flex;
+    /* background-color: pink; */
+}
 @media screen and (max-width: 992px){
+   .prediction_box{
+       display: block;
+   }
+   .prediction_text{
+       padding: 40px;
+       margin-right: 30vw;
+       margin-left: 15vw;
+   }
+   .predictSales{
+       width: 40vw;
+       margin-left: auto;
+   }
+   .Sales_box{
+       width: 25vw;
+   }
    
 }

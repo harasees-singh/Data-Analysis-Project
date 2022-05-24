@@ -18,7 +18,7 @@ export default[
         
         "cars using mpfi tend to be more expensive than others, offering higher horsepower.4bbl is not looking like a good option because of poor average mileage and below average horsepower at a rather high price. For example spfi costs similar to 4bbl and delivers way better mileage and similar hp."],
         
-        report: <iframe className="report" title="primary features final - curbweight" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjc4NjkwZDYtMDY1My00YjA1LWFiZDQtMDA2MjU4YmRkM2RiIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameborder="0" allowFullScreen="true"></iframe>
+        report: <iframe className="report" title="primary features final - curbweight" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjc4NjkwZDYtMDY1My00YjA1LWFiZDQtMDA2MjU4YmRkM2RiIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameBorder="0" allowFullScreen={true}></iframe>
     },
 
     {

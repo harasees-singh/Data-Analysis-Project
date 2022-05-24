@@ -20,7 +20,8 @@ function Form({ ...props }) {
                     label="Select"
                     value={props.option}
                     onChange={props.handleChange}
-                    helperText={"Please select " + props.name + " type"}
+                    helperText={"Please select " + props.name}
+                    className='inputfield'
                     
                 >
                     {props.menuops.map((option) => (

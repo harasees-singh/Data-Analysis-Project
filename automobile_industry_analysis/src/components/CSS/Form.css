@@ -1,5 +1,15 @@
 .leftalign{
     text-align: left;
     margin: 0;
-    
+    max-width: 6vw;
 }
+.inputfield{
+    max-width: 15vw;
+    /* background-color: pink; */
+}
+@media screen and (max-width: 992px){
+    .inputfield{
+        max-width: 30vw;
+    }
+ }
+ 
