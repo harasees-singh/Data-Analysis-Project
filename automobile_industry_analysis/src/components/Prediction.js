@@ -20,7 +20,8 @@ import doornumbertypes from '../assets/Inferences/DoornumberTypes'
 import carbodytypes from '../assets/Inferences/CarbodyTypes'
 import drivewheeltypes from "../assets/Inferences/DrivewheelTypes";
 import cylindertypes from "../assets/Inferences/CylinderType";
-import { svgIconClasses } from "@mui/material";
+///////////////////////////////////////////////////////
+import LinearRegression from "./LinearRegression";
 
 function Prediction() {
 
@@ -85,6 +86,11 @@ function Prediction() {
     const handleSales = (event) => {
         setSales(event);
     };
+
+    ///////////////////////////////
+    const parameters = [cylindernumber, drivewheel, ]
+    ///////////////////////////////
+
     const width_ = '25vw';
     return (
         <div className='prediction_box'>
@@ -112,7 +118,7 @@ function Prediction() {
                     <Form option={cylindernumber} handleChange={handleCylinder} menuops={cylindertypes} name={"cylinder count"} />
                     <div className='buttons-dataset'>
                         <Button variant="contained" color="primary"  onClick={() => {
-                            setSales(15)
+                            setSales(LinearRegression([doornumber, curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.mileage, values.mileage, values.price, ]))
                         }}>
                             Predict
                         </Button>
