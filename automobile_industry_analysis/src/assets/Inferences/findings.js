@@ -46,16 +46,27 @@ export default[
             
         "The top 10 cars sold 13 M units in total out of the 16 M total sales. Top 10 cars by sales cover all the Customer Segments except the 'No Segment'. **Please note that a specific car model is mapped to a single Car Segment only. In the graph the legend shows different Segments corresponding to the same car name to represent different car models which share the same name.**",
         
-        "The top 10 cars feature only 3 car body types: sedan, hatchback and hardtop. Sedan turns out to be the most popular carbody type, followed closely by hatchback. While Regular I, Regular II and No segment feature a single body type (hatchback, sedan and convertible respectively) wagons and sedans dominate the market in Business and Luxury Segments respectively. 2 door cars turn out to be a popular opinion in all segments except Business but lose to 4 door cars in average sales of all segments combined.",
+        "The top 10 cars feature only 3 car body types: sedan, hatchback and hardtop. Sedan turns out to be the most popular carbody type, followed closely by hatchback. While Regular I, Regular II and No segment feature a single body type (hatchback, sedan and convertible respectively) wagons and sedans dominate the market in Business and Luxury Segments respectively. 2 door cars turn out to be a popular opinion in top 10 cars of each segment except Business but lose to 4 door cars in total sales of all segments combined.",
          
-        "ohc has virtually no competition from other engine types except in the 'No Segment' where no car uses ohc and dohc dominates the sales. On the whole ohc is the most popular engine type. On the first look 2bbl looks like a popular opinion but adjusting the lower limit of price range from 5k USD to 8k USD shows a completely opposite trend with mpfi dominating the sales. This continues to be true for hiher price points as well."],
+        "ohc has virtually no competition from other engine types except in the 'No Segment' where no car uses ohc and dohc dominates the sales. On the whole ohc is the most popular engine type. On the first look 2bbl looks like a popular opinion but adjusting the lower limit of price range from 5k USD to 8k USD shows a completely opposite trend with mpfi dominating the sales. This continues to be true for hiher price points as well.",
+    
+        "Gas is clearly the popular fuel type as there is only 1 diesel car in the top 10 list (toyota corolla). Also 4 cylinders seem to dominate the market being way ahead of 6 cylinder car sales. There is not a single car with 2, 3, 5, 8 or 12 cylinder count in the top 10 list.",
 
-        report: <iframe className='report' title="Popular Car Specifications - Popular aspiration and drivewheel" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjJmM2M0NGYtMjViMi00ODljLWE2ZmMtYjUzMzJjZGYzZjE4IiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
+        "Standard aspiration is clearly the most popular aspiration type with all the top 10 cars featuring std aspiration. Only the Luxury segment's top 10 cars feature some amount of Turbo sales. While fwd seems to be the popular drivewheel option, all the Luxury segment cars feature rwd and 4wd dominates in Business segment"
+    ],
+
+        report: <iframe className='report' title="Popular Car Specifications" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjJmM2M0NGYtMjViMi00ODljLWE2ZmMtYjUzMzJjZGYzZjE4IiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
     },
     {
         id: 3,
         description: "fourth report",
-        list: ["one", "two", "three"],
+        list: [
+            
+        "While Regular I, Regular II and Luxury have maintained a consistent amount of sales percentage over the years, Business Segment seems to be growing steadily going from a sales percentage of 23 in2018 to 28 in 2021. On the other hand cars belonging to 'No Segment' are losing their share in sales rapidly going from 36% in 2018 to 21% in 2021 reinforcing the fact that customers need cars specific to their needs. Adjusting the price window reveals that 'No Segment' lost all it's sales after 2018 in the higher price bracket",
+
+        "two", 
+        
+        "three"],
 
         report: <iframe className='report' title="year wise sales - Customer Segments" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNmJjM2JiNmQtZTQxOC00NTZhLWJkYmMtYTc3MzRhZGM0ZjA1IiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameBorder="0" allowFullScreen={true}></iframe>
     },
@@ -64,6 +75,6 @@ export default[
         description: "fifth report",
         list: ["one", "two", "three"],
 
-        report: <iframe className='report' title="Global Sales" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMWUyOWVmNmUtYjU0YS00ODFmLWE4NmItOGQ0NjQwZmJjYzhkIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+        report: <iframe className='report' title="Global Sales" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMWUyOWVmNmUtYjU0YS00ODFmLWE4NmItOGQ0NjQwZmJjYzhkIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
     }
 ]
