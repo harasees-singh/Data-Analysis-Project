@@ -7,7 +7,6 @@ function Legend() {
     let x= 0
     return (
         <div className="legend">
-            {/* <div className='legend_heading'>Legend</div> */}
             <div className='legend_container'>
                 <p className='title'>Drivewheel Types</p>
                 {DrivewheelTypes.map((pair) => (

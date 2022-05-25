@@ -1,8 +1,5 @@
-import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-// import robot1 from '../assets/robot-finding-data.svg'
-// import robot2 from '../assets/robot-doing-data-analysis.svg'
 import "./CSS/Header.css"
 import top from '../assets/images/final_top.jpg'
 function Header() {

@@ -1,3 +1,7 @@
+:root {
+    
+    --shadow: rgb(221, 223, 228);
+  }
 .prediction_warning {
     font-size: 12px;
 }
@@ -24,7 +28,7 @@
 
 .prediction_box {
     display: flex;
-    box-shadow: 0px 0px 10px 3px rgb(218 228 255);
+    box-shadow: 0px 0px 10px 3px var(--shadow);
     border-radius: 10px;
     margin-bottom: 20px;
 }

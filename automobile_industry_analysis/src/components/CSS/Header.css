@@ -1,3 +1,7 @@
+:root {
+    
+    --shadow: rgb(221, 223, 228);
+  }
 .vectors-top {
     max-width: 60vw;
     border-radius: 10px;;
@@ -40,7 +44,7 @@
     /* max-width: fit-conte;
      */
     box-sizing: border-box;
-    box-shadow: 0px 0px 18px 0.5px rgb(218 228 255);
+    box-shadow: 0px 0px 18px 0.5px var(--shadow);
     border-radius: 10px;
     text-align: left;
     margin-bottom: 20px;

@@ -2,15 +2,10 @@ import "./CSS/Prediction.css"
 import * as React from 'react';
 import prediction_img from "../assets/images/final_down.jpg"
 import Form from './Form.js'
+import TextForm from './TextForm'
 import Button from '@material-ui/core/Button';
-/////////////////////////////////////////////////////
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
 import Box from '@mui/material/Box';
-import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
-import FormHelperText from '@mui/material/FormHelperText';
-import FormControl from '@mui/material/FormControl';
 /////////////////////////////////////////////////////
 import fueltypes from '../assets/Inferences/FuelTypes'
 import enginetypes from '../assets/Inferences/EngineTypes'
@@ -96,10 +91,6 @@ function Prediction() {
         setSales(event);
     };
 
-    ///////////////////////////////
-    ///////////////////////////////
-
-    const width_ = '25vw';
     return (
         <div className='prediction_box'>
             <div className="prediction_heading">
@@ -128,8 +119,9 @@ function Prediction() {
 
                     <div className='buttons-dataset'>
                         <Button variant="contained" color="primary"  onClick={() => {
-                            // if(isNaN(parseInt(values.peakrpm, 10))){
+                            
                             let terminate = false
+
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.peakrpm))){
                                 seterrorPeakrpm(true)
                                 terminate = true
@@ -139,42 +131,36 @@ function Prediction() {
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.curbweight))){
                                 seterrorCurbweight(true)
                                 terminate = true
-
                             }
                             else seterrorCurbweight(false)
 
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.enginesize))){
                                 seterrorEnginesize(true)
                                 terminate = true
-
                             }
                             else seterrorEnginesize(false)
 
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.horsepower))){
                                 seterrorHp(true)
                                 terminate = true
-
                             }
                             else seterrorHp(false)
 
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.citymileage))){
                                 seterrorCitymileage(true)
                                 terminate = true
-
                             }
                             else seterrorCitymileage(false)
                             
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.highwaymileage))){
                                 seterrorHighwaymileage(true)
                                 terminate = true
-
                             }
                             else seterrorHighwaymileage(false)
 
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.price))){
                                 seterrorPrice(true)
                                 terminate = true
-
                             }
                             else seterrorPrice(false)
                             
@@ -188,97 +174,20 @@ function Prediction() {
                 </div>
                 <div className="prediction_input_fields">
                     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
-                        <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
-                                <OutlinedInput
-                                    value={values.curbweight}
-                                    onChange={handleChange('curbweight')}
-                                    endAdornment={<InputAdornment position="end">kg</InputAdornment>}
-                                    className='inputfield'
-                                    error={errorCurbweight}
-                                />
-                                <FormHelperText>Please enter curbweight</FormHelperText>
-                            </FormControl>
-                        </div>
+                        
+                        <TextForm value={values.curbweight} name={'curbweight'} unit={'kg'} error={errorCurbweight} handleChange={handleChange} />
 
-                        <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
-                                <OutlinedInput
-                                    value={values.enginesize}
-                                    onChange={handleChange('enginesize')}
-                                    endAdornment={<InputAdornment position="end">lt</InputAdornment>}
-                                    className='inputfield'
-                                    error={errorEnginesize}
-                                />
-                                <FormHelperText>Please enter enginesize</FormHelperText>
-                            </FormControl>
-                        </div>
+                        <TextForm value={values.enginesize} name={'enginesize'} unit={'lt'} error={errorEnginesize} handleChange={handleChange} />
 
-                        <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
-                                <OutlinedInput
-                                    value={values.horsepower}
-                                    onChange={handleChange('horsepower')}
-                                    endAdornment={<InputAdornment position="end">hp</InputAdornment>}
-                                    className='inputfield'
-                                    error={errorHp}
-                                />
-                                <FormHelperText>Please enter horsepower</FormHelperText>
-                            </FormControl>
-                        </div>
+                        <TextForm value={values.horsepower} name={'horsepower'} unit={'hp'} error={errorHp} handleChange={handleChange} />
 
-                        <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
-                                <OutlinedInput
-                                    value={values.peakrpm}
-                                    error={errorPeakrpm}
-                                    onChange={handleChange('peakrpm')}
-                                    endAdornment={<InputAdornment position="end">rpm</InputAdornment>}
-                                    className='inputfield'
-                                />
-                                <FormHelperText>Please enter peakrpm</FormHelperText>
-                            </FormControl>
-                        </div>
+                        <TextForm value={values.peakrpm} name={'peakrpm'} unit={'rpm'} error={errorPeakrpm} handleChange={handleChange} />
 
-                        <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
-                                <OutlinedInput
-                                    value={values.citymileage}
-                                    onChange={handleChange('citymileage')}
-                                    endAdornment={<InputAdornment position="end">km / lt</InputAdornment>}
-                                    className='inputfield'
-                                    error={errorCitymileage}
-                                />
-                                <FormHelperText>Please enter city mileage</FormHelperText>
-                            </FormControl>
-                        </div>
+                        <TextForm value={values.citymileage} name={'citymileage'} unit={'km / lt'} error={errorCitymileage} handleChange={handleChange} />
 
-                        <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
-                                <OutlinedInput
-                                    value={values.highwaymileage}
-                                    onChange={handleChange('highwaymileage')}
-                                    endAdornment={<InputAdornment position="end">km / lt</InputAdornment>}
-                                    className='inputfield'
-                                    error={errorHighwaymileage}
-                                />
-                                <FormHelperText>Please enter highway mileage</FormHelperText>
-                            </FormControl>
-                        </div>
+                        <TextForm value={values.highwaymileage} name={'highwaymileage'} unit={'lt'} error={errorHighwaymileage} handleChange={handleChange} />
 
-
-                        <div className="prediction_Input_container">
-                            <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
-                                <OutlinedInput
-                                    value={values.price}
-                                    onChange={handleChange('price')}
-                                    endAdornment={<InputAdornment position="end">USD</InputAdornment>}
-                                    className='inputfield'
-                                    error={errorPrice}
-                                />
-                                <FormHelperText>Please enter price</FormHelperText>
-                            </FormControl>
-                        </div>
+                        <TextForm value={values.price} name={'price'} unit={'USD'} error={errorPrice} handleChange={handleChange} />
 
                         <div className="Sales">
                             <TextField

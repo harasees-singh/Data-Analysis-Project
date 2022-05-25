@@ -2,7 +2,6 @@ const fuelMap = {
     'gas': 1,
     'diesel': 0
 }
-// console.log(fuelMap['diesel'])
 const aspirationMap = {
     'std': 0,
     'turbo': 1
@@ -61,15 +60,14 @@ const coeff = [ 9.70693607e+03, -3.27567287e+02, -2.52550550e+04,  3.52560947e+0
 
 function LinearRegression(inputList){
     let finalVector = []
-    let sales = 0 // return sales (y)
+    let sales = 0 // return sales 
 
-    const intercept = 1323627.7913782678
+    const intercept = 1323627.7913782678 // from linear regression
 
     for(let i = 0; i < 36; i++){
         finalVector.push(0)
     }
 
-    // console.log(inputList) // works
     for(let i = 0; i < 9; i++){
         finalVector[i] = inputList[i];
         if(typeof(inputList[i]) === 'string'){
@@ -83,18 +81,15 @@ function LinearRegression(inputList){
     finalVector[22 + engineMap[inputList[13]]] = 1
     finalVector[29 + fuelsystemMap[inputList[14]]] = 1
     
-    // now multiply with the coefficients and get normalised sales
-    // console.log(finalVector)
+    // now multiply with the coefficients 
+
     for(let i = 0; i < 36; i++){
         sales += coeff[i] * finalVector[i];
     }
-    // denormalize the sales with the sales mean and dev
 
     sales += intercept; 
     
     if(sales < 0) sales = 0
-
-    // console.log(sales)
 
     return parseInt(sales);
 }

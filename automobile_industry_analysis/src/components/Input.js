@@ -5,7 +5,6 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 
-
 export default function Input() {
     const [values, setValues] = React.useState({
         amount: '',
