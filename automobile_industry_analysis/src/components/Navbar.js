@@ -21,9 +21,9 @@ function Navbar() {
     const classes = useStyles();
     return (
         <div className='nav'>
-            <Typography variant="h4" component="h4">
+            <div>
                 Analysis Of The Automobile Industry
-            </Typography>
+            </div>
             <div className='fake-buttons'>
                 <button type='button' className='invisible'><BsPenFill /></button>
                 <button type='button' className='invisible'><AiFillHome /></button>

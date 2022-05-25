@@ -11,12 +11,11 @@
     margin-bottom: 20px;
     padding: 20px;
     display: flex;
-    /* align-items: center; */
 }
 .title{
     margin-left: 5px;
     font-size: 30px;
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Quicksand', sans-serif; */
     font-weight: 600;
     color:rgb(9 0 93);
 }
@@ -25,7 +24,6 @@
     margin-right: 3vw;
     padding: 20px;
     padding-top: 0;
-    /* margin: 10px; */
     margin-left: 3vw;
     max-width: 40vw;
     border-radius: 20px;

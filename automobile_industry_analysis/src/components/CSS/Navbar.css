@@ -1,10 +1,9 @@
 .nav{
     font-size: 22px;
     font-weight: 900;
+    font-size: 33px;
     display: flex;
     font-family: 'Quicksand', sans-serif;
-    /* color : rgb(42, 40, 40);
-    background-color: rgb(238, 235, 237); */
     color : rgb(9 0 93);
     background-color: rgb(145 179 250);
     padding: 13px 30px;
