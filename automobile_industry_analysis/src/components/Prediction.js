@@ -28,13 +28,13 @@ function Prediction() {
     /////////////////////////////////////////
 
     const [values, setValues] = React.useState({
-        curbweight: 0,
-        enginesize: 0,
-        horsepower: 0,
-        peakrpm: 0,
-        citymileage: 0,
-        highwaymileage: 0,
-        price: 0,
+        curbweight: 2000,
+        enginesize: 200,
+        horsepower: 80,
+        peakrpm: 5000,
+        citymileage: 20,
+        highwaymileage: 30,
+        price: 15000,
     });
 
     const handleChange = (prop) => (event) => {
@@ -47,17 +47,17 @@ function Prediction() {
         setFuel(event.target.value);
     };
 
-    const [engine, setEngine] = React.useState('Overhead Camshaft');
+    const [engine, setEngine] = React.useState('ohc');
     const handleEngine = (event) => {
         setEngine(event.target.value)
     }
 
-    const [fuelsystem, setFuelSystem] = React.useState('Sequential fuel injection');
+    const [fuelsystem, setFuelSystem] = React.useState('mfi');
     const handleFuelSystem = (event) => {
         setFuelSystem(event.target.value)
     }
 
-    const [aspiration, setAspirationSystem] = React.useState('standard');
+    const [aspiration, setAspirationSystem] = React.useState('std');
     const handleAspirationSystem = (event) => {
         setAspirationSystem(event.target.value)
     }
@@ -72,7 +72,7 @@ function Prediction() {
         setCarbody(event.target.value)
     }
 
-    const [drivewheel, setDrivewheel] = React.useState('4-wheel Drive');
+    const [drivewheel, setDrivewheel] = React.useState('rwd');
     const handleDrivewheel = (event) => {
         setDrivewheel(event.target.value)
     }
@@ -117,9 +117,10 @@ function Prediction() {
                     <Form option={carbody} handleChange={handleCarbody} menuops={carbodytypes} name={"carbody"} />
                     <Form option={drivewheel} handleChange={handleDrivewheel} menuops={drivewheeltypes} name={"drivewheel"} />
                     <Form option={cylindernumber} handleChange={handleCylinder} menuops={cylindertypes} name={"cylinder count"} />
+
                     <div className='buttons-dataset'>
                         <Button variant="contained" color="primary"  onClick={() => {
-                            setSales(LinearRegression([doornumber, values.curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.mileage, values.citymileage, values.highwaymileage, values.price, fuel, aspiration, carbody, drivewheel, engine, fuelsystem]))
+                            setSales(LinearRegression([doornumber, values.curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.citymileage, values.highwaymileage, values.price, fuel, aspiration, carbody, drivewheel, engine, fuelsystem]))
                         }}>
                             Predict
                         </Button>

@@ -25,7 +25,7 @@ function Form({ ...props }) {
                     
                 >
                     {props.menuops.map((option) => (
-                        <MenuItem key={option.value} value={option.value}>
+                        <MenuItem key={option.value} value={option.label}>
                             <p className='leftalign'>{option.label}</p>
                         </MenuItem>
                     ))}
