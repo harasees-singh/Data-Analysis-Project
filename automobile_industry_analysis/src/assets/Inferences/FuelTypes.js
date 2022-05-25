@@ -7,8 +7,4 @@ export default[
         value: 'diesel',
         label: 'diesel',
     },
-    {
-        value: 'None',
-        label: 'None'
-    }
 ]

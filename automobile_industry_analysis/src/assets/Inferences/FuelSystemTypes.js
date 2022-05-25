@@ -31,8 +31,5 @@ export default[
         value: 'Multi point fuel injection (Turbo)',
         label: 'mfi'
     },
-    {
-        value: 'None',
-        label: 'None'
-    },
+
 ]

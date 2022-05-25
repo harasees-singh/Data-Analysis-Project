@@ -19,9 +19,5 @@ export default[
         value: 'hardtop',
         label: 'hardtop'
     },
-    {
-        value: 'None',
-        label: 'None'
-    }
 
 ]

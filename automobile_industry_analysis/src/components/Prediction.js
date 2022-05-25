@@ -27,6 +27,14 @@ function Prediction() {
 
     /////////////////////////////////////////
 
+    const [errorPeakrpm, seterrorPeakrpm] = React.useState(false)
+    const [errorEnginesize, seterrorEnginesize] = React.useState(false)
+    const [errorCurbweight, seterrorCurbweight] = React.useState(false)
+    const [errorHp, seterrorHp] = React.useState(false)
+    const [errorCitymileage, seterrorCitymileage] = React.useState(false)
+    const [errorHighwaymileage, seterrorHighwaymileage] = React.useState(false)
+    const [errorPrice, seterrorPrice] = React.useState(false)
+
     const [values, setValues] = React.useState({
         curbweight: 2000,
         enginesize: 200,
@@ -89,7 +97,6 @@ function Prediction() {
     };
 
     ///////////////////////////////
-    const parameters = [cylindernumber, drivewheel, ]
     ///////////////////////////////
 
     const width_ = '25vw';
@@ -120,6 +127,58 @@ function Prediction() {
 
                     <div className='buttons-dataset'>
                         <Button variant="contained" color="primary"  onClick={() => {
+                            // if(isNaN(parseInt(values.peakrpm, 10))){
+                            let terminate = false
+                            if(! (/^[-+]?(\d+|Infinity)$/.test(values.peakrpm))){
+                                seterrorPeakrpm(true)
+                                terminate = true
+                            }
+                            else seterrorPeakrpm(false)
+
+                            if(! (/^[-+]?(\d+|Infinity)$/.test(values.curbweight))){
+                                seterrorCurbweight(true)
+                                terminate = true
+
+                            }
+                            else seterrorCurbweight(false)
+
+                            if(! (/^[-+]?(\d+|Infinity)$/.test(values.enginesize))){
+                                seterrorEnginesize(true)
+                                terminate = true
+
+                            }
+                            else seterrorEnginesize(false)
+
+                            if(! (/^[-+]?(\d+|Infinity)$/.test(values.horsepower))){
+                                seterrorHp(true)
+                                terminate = true
+
+                            }
+                            else seterrorHp(false)
+
+                            if(! (/^[-+]?(\d+|Infinity)$/.test(values.citymileage))){
+                                seterrorCitymileage(true)
+                                terminate = true
+
+                            }
+                            else seterrorCitymileage(false)
+                            
+                            if(! (/^[-+]?(\d+|Infinity)$/.test(values.highwaymileage))){
+                                seterrorHighwaymileage(true)
+                                terminate = true
+
+                            }
+                            else seterrorHighwaymileage(false)
+
+                            if(! (/^[-+]?(\d+|Infinity)$/.test(values.price))){
+                                seterrorPrice(true)
+                                terminate = true
+
+                            }
+                            else seterrorPrice(false)
+                            
+                            if(terminate) return;
+
                             setSales(LinearRegression([doornumber, values.curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.citymileage, values.highwaymileage, values.price, fuel, aspiration, carbody, drivewheel, engine, fuelsystem]))
                         }}>
                             Predict
@@ -135,6 +194,7 @@ function Prediction() {
                                     onChange={handleChange('curbweight')}
                                     endAdornment={<InputAdornment position="end">kg</InputAdornment>}
                                     className='inputfield'
+                                    error={errorCurbweight}
                                 />
                                 <FormHelperText>Please enter curbweight</FormHelperText>
                             </FormControl>
@@ -147,6 +207,7 @@ function Prediction() {
                                     onChange={handleChange('enginesize')}
                                     endAdornment={<InputAdornment position="end">lt</InputAdornment>}
                                     className='inputfield'
+                                    error={errorEnginesize}
                                 />
                                 <FormHelperText>Please enter enginesize</FormHelperText>
                             </FormControl>
@@ -159,6 +220,7 @@ function Prediction() {
                                     onChange={handleChange('horsepower')}
                                     endAdornment={<InputAdornment position="end">hp</InputAdornment>}
                                     className='inputfield'
+                                    error={errorHp}
                                 />
                                 <FormHelperText>Please enter horsepower</FormHelperText>
                             </FormControl>
@@ -168,6 +230,7 @@ function Prediction() {
                             <FormControl sx={{ m: 1, width: { width_ } }} variant="outlined">
                                 <OutlinedInput
                                     value={values.peakrpm}
+                                    error={errorPeakrpm}
                                     onChange={handleChange('peakrpm')}
                                     endAdornment={<InputAdornment position="end">rpm</InputAdornment>}
                                     className='inputfield'
@@ -183,8 +246,9 @@ function Prediction() {
                                     onChange={handleChange('citymileage')}
                                     endAdornment={<InputAdornment position="end">km / lt</InputAdornment>}
                                     className='inputfield'
+                                    error={errorCitymileage}
                                 />
-                                <FormHelperText>Please enter citymileage</FormHelperText>
+                                <FormHelperText>Please enter city mileage</FormHelperText>
                             </FormControl>
                         </div>
 
@@ -195,8 +259,9 @@ function Prediction() {
                                     onChange={handleChange('highwaymileage')}
                                     endAdornment={<InputAdornment position="end">km / lt</InputAdornment>}
                                     className='inputfield'
+                                    error={errorHighwaymileage}
                                 />
-                                <FormHelperText>Please enter highwaymileage</FormHelperText>
+                                <FormHelperText>Please enter highway mileage</FormHelperText>
                             </FormControl>
                         </div>
 
@@ -208,6 +273,7 @@ function Prediction() {
                                     onChange={handleChange('price')}
                                     endAdornment={<InputAdornment position="end">USD</InputAdornment>}
                                     className='inputfield'
+                                    error={errorPrice}
                                 />
                                 <FormHelperText>Please enter price</FormHelperText>
                             </FormControl>

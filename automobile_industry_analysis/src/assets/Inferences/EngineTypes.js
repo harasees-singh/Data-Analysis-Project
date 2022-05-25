@@ -27,9 +27,6 @@ export default[
         value: 'Overhead Camshaft with cylinders mounted at 60 degree angle',
         label: 'ohcv'
     },
-    {
-        value: 'None',
-        label: 'None'
-    }
+
 
 ]

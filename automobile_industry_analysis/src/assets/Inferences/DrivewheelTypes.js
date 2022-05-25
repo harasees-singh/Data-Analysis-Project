@@ -11,8 +11,5 @@ export default[
         value: '4-wheel Drive',
         label: '4wd'
     },
-    {
-        value: 'None',
-        label: 'None'
-    }
+
 ]

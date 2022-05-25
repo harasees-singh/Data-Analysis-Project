@@ -7,9 +7,6 @@ export default[
         value: 'turbo',
         label: 'turbo',
     },
-    {
-        value: 'None',
-        label: 'None'
-    }
+
 
 ]
