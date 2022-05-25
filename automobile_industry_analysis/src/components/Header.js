@@ -16,8 +16,7 @@ function Header() {
 
                 <div className='typography'>
                     <Typography variant="h4" component="h4">
-                        this is our insanely valuable dataset it consists of data of 200 something cars and u will be blown away
-                        by the amount of
+                        placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text 
                     </Typography>
                     <div className='buttons'>
                         <Button variant="contained" color="primary" className='buttons-dataset'

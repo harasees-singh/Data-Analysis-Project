@@ -107,10 +107,11 @@ function Prediction() {
                 <div className="predictSales">
                     PREDICT SALES
                     <div className="predictSales_text">
-                        Input the car specifications and we will predict it's annual sales for you ! Just fill in the car specifications and click on 'PREDICT SALES'
-
+                        Input the car specifications and we will predict it's annual sales for you ! Just fill in the car specifications and click on 'PREDICT SALES' 
                     </div>
-
+                    <div className="prediction_warning">
+                        Please enter whole numbers only
+                    </div>
 
                 </div>
             </div>
