@@ -1,29 +1,35 @@
-.prediction_warning{
+.prediction_warning {
     font-size: 12px;
 }
-.buttons-dataset{
+
+.buttons-dataset {
     margin-right: auto;
     /* background-color: pink; */
     /* align-items: left; */
     text-align: left;
     padding-left: 7px;
 }
-.prediction_img{
+
+.prediction_img {
     border-radius: 10px;
-    max-height: 40vw;
+    height: 40vw;
 }
-.Sales{
-    max-width: 20vw;
+
+.Sales {
+    /* max-width: 20vw; */
+    width: 15vw;
     padding: 10px;
     padding-bottom: 75px;
 }
-.prediction_box{
+
+.prediction_box {
     display: flex;
     box-shadow: 0px 0px 10px 3px rgb(218 228 255);
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.predictSales{
+
+.predictSales {
     margin-top: 60px;
     padding: 20px;
     font-size: 30px;
@@ -33,12 +39,14 @@
     border-radius: 10px;
     margin-right: auto;
 }
-.predictSales_text{
+
+.predictSales_text {
     margin-top: 20px;
     font-size: 18px;
     margin-bottom: 20px;
 }
-.prediction_text{
+
+.prediction_text {
     text-align: center;
     height: fit-content;
     font-size: 30px;
@@ -46,50 +54,142 @@
     color: rgb(9 0 93);
     margin-top: 40px;
     padding: 20px 30px;
-    max-width: 30vw;
+    width: 30vw;
     box-sizing: border-box;
-    /* margin-left: auto; */
+    margin-left: auto;
     margin-right: 8%;
     margin-bottom: 40px;
 }
-.inputfield{
-    max-width: 20vw;
+
+.inputfield {
+    width: 20vw;
     /* background-color: purple; */
 }
-.Sales_box{
+
+.Sales_box {
     /* background-color: purple; */
     width: 15vw;
 }
-.prediction_input_fields{
+
+.prediction_input_fields {
     /* background-color: pink; */
-    max-width: 20vw;
+    width: 20vw;
     display: flex;
 }
-.prediction_input_container{
+
+.prediction_input_container {
     /* background-color: pink; */
     width: 19vw;
-    max-width: 18vw;
     box-sizing: border-box;
 }
-.prediction_heading{
+
+.prediction_heading {
     display: flex;
     /* background-color: pink; */
 }
-@media screen and (max-width: 992px){
-   .prediction_box{
-       display: block;
-   }
-   .prediction_text{
-       padding: 40px;
-       margin-right: 30vw;
-       margin-left: 15vw;
-   }
-   .predictSales{
-       width: 40vw;
-       margin-left: auto;
-   }
-   .Sales_box{
-       width: 25vw;
-   }
-   
+
+@media screen and (max-width: 992px) {
+    .prediction_text {
+        margin-top: 20px;
+        padding: 0 0;
+        width: 50vw;
+        box-sizing: border-box;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 40px;
+    }
+
+    .prediction_input_container {
+        /* background-color: pink; */
+        width: 40vw;
+        box-sizing: border-box;
+    }
+
+    .prediction_input_fields {
+        /* background-color: pink; */
+        width: 40vw;
+        display: flex;
+    }
+
+    .prediction_box {
+        display: block;
+    }
+
+    .prediction_text {
+        /* padding: 40px; */
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 0;
+    }
+
+    .predictSales {
+        width: 40vw;
+        margin-left: auto;
+    }
+
+    .Sales_box {
+        width: 20vw;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    .prediction_heading {
+        display: block;
+    }
+
+    .prediction_img {
+        height: 100vw;
+        margin-bottom: 0;
+    }
+
+    .predictSales {
+        width: 70vw;
+    }
+
+    .prediction_text {
+        /* padding: 40px; */
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 100vw;
+        width: 80vw;
+    }
+
+    .inputfield {
+        width: 30vw;
+        /* background-color: purple; */
+    }
+
+    .Sales_box {
+        /* background-color: purple; */
+        width: 30vw;
+    }
+
+    .prediction_input_fields {
+        /* background-color: pink; */
+        width: 30vw;
+        display: flex;
+    }
+
+    .prediction_input_container {
+        /* background-color: pink; */
+        width: 30vw;
+        box-sizing: border-box;
+    }
+
+    .dropdown {
+        width: 50vw;
+        /* background-color: pink;  */
+
+    }
+
+    .buttons-dataset {
+        /* background-color: pink; */
+        /* align-items: left; */
+        text-align: left;
+        /* padding-left: 40px; */
+        margin-left: 10vw;
+        margin-bottom: 20px;
+    }
 }

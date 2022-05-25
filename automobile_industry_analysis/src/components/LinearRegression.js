@@ -1,5 +1,3 @@
-import { SliderValueLabelUnstyled } from "@mui/base"
-
 const fuelMap = {
     'gas': 1,
     'diesel': 0
@@ -86,19 +84,17 @@ function LinearRegression(inputList){
     finalVector[29 + fuelsystemMap[inputList[14]]] = 1
     
     // now multiply with the coefficients and get normalised sales
-    console.log(finalVector)
+    // console.log(finalVector)
     for(let i = 0; i < 36; i++){
         sales += coeff[i] * finalVector[i];
     }
     // denormalize the sales with the sales mean and dev
 
-    // sales = (sales * dev_sales) + mean_sales
-
     sales += intercept; 
     
     if(sales < 0) sales = 0
 
-    console.log(sales)
+    // console.log(sales)
 
     return parseInt(sales);
 }

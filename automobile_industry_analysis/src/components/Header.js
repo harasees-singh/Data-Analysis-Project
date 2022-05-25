@@ -16,12 +16,12 @@ function Header() {
 
                 <div className='typography'>
                     <Typography variant="h4" component="h4">
-                        placeholder text placeholder text placeholder text placeholder text placeholder text placeholder text 
+                        Welcome to a detailed data analysis of the automobile industry, equipped with industry leading tools like Power BI, Machine Learning and more !
                     </Typography>
                     <div className='buttons'>
                         <Button variant="contained" color="primary" className='buttons-dataset'
                             href="https://1drv.ms/x/s!AkSxQvIzIp7WkYwOehfepRWpe56ZTQ?e=G2KtMA">
-                            Data Set
+                            Data Set 
                         </Button>
                     </div>
                 </div>
