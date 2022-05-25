@@ -52,8 +52,6 @@ const coeff = [ 9.70693607e+03, -3.27567287e+02, -2.52550550e+04,  3.52560947e+0
     1.23312233e+05, -3.45364427e+04,  2.76453054e+04, -2.78516373e+04,
    -2.95947674e+04, -2.73449382e+04,  4.71369255e+04, -7.87666786e+04]
 
-// inputlist = [doornumber, values.curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.citymileage, values.highwaymileage, values.price, fuel, aspiration, carbody, drivewheel, engine, fuelsystem]
-
 // 'doornumber', 'curbweight', 'cylindernumber', 'enginesize',
 // 'horsepower', 'peakrpm', 'citympg', 'highwaympg', 'price', 'fueltype0', 'fueltype1', 'aspiration0', 'aspiration1',
 // 'carbody0', 'carbody1', 'carbody2', 'carbody3', 'carbody4',

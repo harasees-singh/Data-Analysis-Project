@@ -34,7 +34,7 @@ function Prediction() {
         peakrpm: 5000,
         citymileage: 20,
         highwaymileage: 30,
-        price: 15000,
+        price: 25000,
     });
 
     const handleChange = (prop) => (event) => {
