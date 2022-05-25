@@ -25,6 +25,7 @@
   @media screen and (max-width: 430px){
     .nav{
       padding: 20px;
+      
     }
     .fake-buttons{
       display: block;
