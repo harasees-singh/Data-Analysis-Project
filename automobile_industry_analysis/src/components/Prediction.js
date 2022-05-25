@@ -117,14 +117,14 @@ function Prediction() {
             </div>
             <div className='prediction_text'>
                 <div className="dropdown">
-                    <Form option={fuel} handleChange={handleFuel} menuops={fueltypes} name={"fuel"} />
-                    <Form option={engine} handleChange={handleEngine} menuops={enginetypes} name={"engine"} />
-                    <Form option={fuelsystem} handleChange={handleFuelSystem} menuops={fuelsystemtypes} name={"fuelsystem"} />
-                    <Form option={aspiration} handleChange={handleAspirationSystem} menuops={aspirationtypes} name={"aspiration"} />
-                    <Form option={doornumber} handleChange={handleDoornumber} menuops={doornumbertypes} name={"doornumber"} />
-                    <Form option={carbody} handleChange={handleCarbody} menuops={carbodytypes} name={"carbody"} />
-                    <Form option={drivewheel} handleChange={handleDrivewheel} menuops={drivewheeltypes} name={"drivewheel"} />
-                    <Form option={cylindernumber} handleChange={handleCylinder} menuops={cylindertypes} name={"cylinder count"} />
+                    <Form key={0} option={fuel} handleChange={handleFuel} menuops={fueltypes} name={"fuel"} />
+                    <Form key={1} option={engine} handleChange={handleEngine} menuops={enginetypes} name={"engine"} />
+                    <Form key={2} option={fuelsystem} handleChange={handleFuelSystem} menuops={fuelsystemtypes} name={"fuelsystem"} />
+                    <Form key={3} option={aspiration} handleChange={handleAspirationSystem} menuops={aspirationtypes} name={"aspiration"} />
+                    <Form key={4} option={doornumber} handleChange={handleDoornumber} menuops={doornumbertypes} name={"doornumber"} />
+                    <Form key={5} option={carbody} handleChange={handleCarbody} menuops={carbodytypes} name={"carbody"} />
+                    <Form key={6} option={drivewheel} handleChange={handleDrivewheel} menuops={drivewheeltypes} name={"drivewheel"} />
+                    <Form key={7} option={cylindernumber} handleChange={handleCylinder} menuops={cylindertypes} name={"cylinder count"} />
 
                     <div className='buttons-dataset'>
                         <Button variant="contained" color="primary"  onClick={() => {

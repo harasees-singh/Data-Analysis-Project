@@ -36,7 +36,7 @@ export default[
         "After the price point of ~16k USD it is clear that cars belonging to the Regular and Business Segments lose majority of their sales and the Luxury cars start dominating. Also the Business Segment turns out to be very niche in terms of the price segment and Regular Segment outperforms it in terms of sales even in that very segment. Finally it is clear from the number of car sales that cars belonging to no particular segment (or the 'No Segment') suffer tremendously. This is because they fail to appeal to any customer segment."
     ],
 
-        report: <iframe className='report' title="Customer Segments final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTBlOWMzMzktMWNjMy00ZmJiLTg4MjctNGMyMjAwZTc3NDY4IiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+        report: <iframe className='report' title="Customer Segments final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTBlOWMzMzktMWNjMy00ZmJiLTg4MjctNGMyMjAwZTc3NDY4IiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
     },
 
     {
@@ -68,7 +68,7 @@ export default[
         
         "While hardtops doubled their sales going from 2018 to 2019, wagons have lost half of their sales going from 2018 to 2020. Standard aspiration car sales quickly recovered after the drop in 2020 but Turbo sales didn't recover."],
 
-        report: <iframe className='report' title="year wise sales final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMThlMDI3NTQtM2VkOC00NjI2LThjNzgtNmU5M2ZjNWUwNWUxIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSectionaa9160c08869bcb2862e" frameborder="0" allowFullScreen="true"></iframe>
+        report: <iframe className='report' title="year wise sales final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMThlMDI3NTQtM2VkOC00NjI2LThjNzgtNmU5M2ZjNWUwNWUxIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSectionaa9160c08869bcb2862e" frameBorder="0" allowFullScreen={true}></iframe>
     },
     {
         id: 4,
@@ -81,6 +81,6 @@ export default[
     
         ],
 
-        report: <iframe className='report' title="Global Sales" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMWUyOWVmNmUtYjU0YS00ODFmLWE4NmItOGQ0NjQwZmJjYzhkIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+        report: <iframe className='report' title="Global Sales" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMWUyOWVmNmUtYjU0YS00ODFmLWE4NmItOGQ0NjQwZmJjYzhkIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
     }
 ]

@@ -4,6 +4,7 @@ import EngineTypes from '../assets/Inferences/EngineTypes';
 import FuelSystemTypes from '../assets/Inferences/FuelSystemTypes';
 import DrivewheelTypes from '../assets/Inferences/DrivewheelTypes';
 function Legend() {
+    let x= 0
     return (
         <div className="legend">
             {/* <div className='legend_heading'>Legend</div> */}
@@ -11,15 +12,15 @@ function Legend() {
                 <p className='title'>Drivewheel Types</p>
                 {DrivewheelTypes.map((pair) => (
 
-                    <Row label={pair.label} value={pair.value} />
-
+                    <Row key={x++} label={pair.label} value={pair.value} />
+                    
                 ))}
             </div>
             <div className='legend_container'>
                 <p className='title'>Engine Types</p>
                 {EngineTypes.map((pair) => (
 
-                    <Row label={pair.label} value={pair.value} />
+                    <Row key={x++} label={pair.label} value={pair.value} />
 
                 ))}
             </div>
@@ -27,7 +28,7 @@ function Legend() {
                 <p className='title'>Fuel System Types</p>
                 {FuelSystemTypes.map((pair) => (
 
-                    <Row label={pair.label} value={pair.value} />
+                    <Row key={x++} label={pair.label} value={pair.value} />
 
                 ))}
             </div>
