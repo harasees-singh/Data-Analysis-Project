@@ -22,4 +22,14 @@
     border: 0;
     cursor: pointer;
   }
-  
+  @media screen and (max-width: 430px){
+    .nav{
+      padding: 20px;
+    }
+    .fake-buttons{
+      display: block;
+      padding-left: 30px;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }

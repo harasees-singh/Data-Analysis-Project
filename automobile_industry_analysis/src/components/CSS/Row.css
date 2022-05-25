@@ -27,9 +27,13 @@
     .key{
         font-size: 20px;
         margin-right: 0;
+        padding-right: 0;
     }
     .value{
         font-size: 18px; 
         margin-left: auto;
+    }
+    .row{
+        padding: 4px;
     }
 }
