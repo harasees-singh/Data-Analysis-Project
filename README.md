@@ -16,9 +16,9 @@ Any other queries you can think of
 Please note that you will need node.js installed on your machine to run this project.
 
 1. open the terminal in "Data Analysis Project" folder.
-2. type 'cd automobile_industry_analysis' in the terminal and press enter.
-3. type 'npm i' in the terminal and press enter. Wait for the packages to download and install.
-4. finally enter 'npm start' in the ternminal to run the app on port 3000.
+2. type `cd automobile_industry_analysis` in the terminal and press enter.
+3. type `npm i` in the terminal and press enter. Wait for the packages to download and install.
+4. finally enter `npm start` in the ternminal to run the app on port 3000.
 
 ## Data Set
 ### This project uses a data set consisting of various features like price, sales, horsepower, curbweight, mileage, etc. of 205 cars. 
@@ -30,7 +30,7 @@ One of the also use an additional <a href="https://www.factorywarrantylist.com/c
 
 ## Data Cleaning
 Python's Pandas library has been used for data cleaning. All the code is present in ./data/data_cleaning.ipynb
-Some of the cars had missing sales data so those were removed from the data set to make another data set named 'dataset_after_cleaning/xlsx' present at ./data/Datasets/dataset_after_cleaning/xlsx
+Some of the cars had missing sales data so those were removed from the data set to make another data set named 'dataset_after_cleaning/xlsx' present at ./data/Datasets/dataset_after_cleaning/xlsx 
 
 ## Feature Engineering
 
