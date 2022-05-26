@@ -1,3 +1,5 @@
+// one hot encodings
+// value corres to key represents the index where 1 is to placed in the array obtained from encoding
 const fuelMap = {
     'gas': 1,
     'diesel': 0
@@ -6,7 +8,7 @@ const aspirationMap = {
     'std': 0,
     'turbo': 1
 }
-const carbodMap = {
+const carbodyMap = {
     'convertible': 0,
     'hardtop': 1,
     'hatchback': 2,
@@ -49,6 +51,8 @@ const coeff = [ 9.70693607e+03, -3.27567287e+02, -2.52550550e+04,  3.52560947e+0
     1.23312233e+05, -3.45364427e+04,  2.76453054e+04, -2.78516373e+04,
    -2.95947674e+04, -2.73449382e+04,  4.71369255e+04, -7.87666786e+04]
 
+// this is the input format for linear regression model (requires one hot encoding of certain feature types)
+
 // 'doornumber', 'curbweight', 'cylindernumber', 'enginesize',
 // 'horsepower', 'peakrpm', 'citympg', 'highwaympg', 'price', 'fueltype0', 'fueltype1', 'aspiration0', 'aspiration1',
 // 'carbody0', 'carbody1', 'carbody2', 'carbody3', 'carbody4',
@@ -64,34 +68,57 @@ function LinearRegression(inputList){
 
     const intercept = 1323627.7913782678 // from linear regression
 
+    // initialize an array of length 36
     for(let i = 0; i < 36; i++){
         finalVector.push(0)
     }
 
+    // user's input is a 15 length array but since we used one-hot encoding in linear regression
+    // we must first convert user input in the same format. this is done by encoding features like 
+    // enginetype and fuel using the same one hot encoding. The maps at the start of the file
+    // depict the one hot encoded value at for each feature type, for ex, 'ohcv': 5 means 
+    // the 'ohcv' engine type is encoded as [0, 0, 0, 0, 0, 1, 0] with 1 at the 5th index.
+
+    // first 9 values weren't one hot encoded so we can simply fit them in
     for(let i = 0; i < 9; i++){
         finalVector[i] = inputList[i];
+        // in case typeof the value is string we can typecast it into int using pasrseInt funtion 
+        // using a radix 10 (or base 10)
         if(typeof(inputList[i]) === 'string'){
             finalVector[i] = parseInt(finalVector[i], 10)
         }
     }
+
+    // now dp one hot encoding for values (present on indices ranging from 9 to 14 in the inputList).
+    // the respective Map returns the index where 1 is to be placed corresponding to a particular 
+    // feature type. Like hatckback is encoded as [0, 0, 1, 0, 0] so we put 1 at the second index
+    // from the base id which is 14 for carbody (since carbody's one hot encoding ranges over the indices
+    // [14, 18])
+
     finalVector[9 + fuelMap[inputList[9]]] = 1
     finalVector[11 + aspirationMap[inputList[10]]] = 1
-    finalVector[14 + carbodMap[inputList[11]]] = 1
+    finalVector[14 + carbodyMap[inputList[11]]] = 1
     finalVector[19 + drivewheelMap[inputList[12]]] = 1
     finalVector[22 + engineMap[inputList[13]]] = 1
     finalVector[29 + fuelsystemMap[inputList[14]]] = 1
     
-    // now multiply with the coefficients 
+    // now multiply with the coefficients and add them all up to get the sales
 
     for(let i = 0; i < 36; i++){
         sales += coeff[i] * finalVector[i];
     }
 
+    // y = m1x1 + m2x2 + ..... m36x36 + intercept (here [m1, m2, .... m36] is the
+    // coeff array and [x1, x2..... x36] is the 'finalVector' derived from inputList)
+
+    // to get the sales using the straight line equation we add the intercept
     sales += intercept; 
     
     if(sales < 0) sales = 0
 
-    return parseInt(sales);
+    // incase sales are negative we simply return 0
+
+    return parseInt(sales, 10); // return a whole number
 }
 
 export default LinearRegression

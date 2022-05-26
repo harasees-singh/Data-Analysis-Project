@@ -8,8 +8,6 @@
 
 .buttons-dataset {
     margin-right: auto;
-    /* background-color: pink; */
-    /* align-items: left; */
     text-align: left;
     padding-left: 7px;
 }
@@ -20,7 +18,6 @@
 }
 
 .Sales {
-    /* max-width: 20vw; */
     width: 15vw;
     padding: 10px;
     padding-bottom: 75px;
@@ -36,6 +33,7 @@
 .predictSales {
     margin-top: 60px;
     padding: 20px;
+    margin-right: 5px;
     font-size: 30px;
     height: fit-content;
     width: 10vw;
@@ -67,32 +65,27 @@
 
 .inputfield {
     width: 20vw;
-    /* background-color: purple; */
 }
 
 .Sales_box {
-    /* background-color: purple; */
     width: 15vw;
 }
 
 .prediction_input_fields {
-    /* background-color: pink; */
     width: 20vw;
     display: flex;
 }
 
 .prediction_input_container {
-    /* background-color: pink; */
     width: 19vw;
     box-sizing: border-box;
 }
 
 .prediction_heading {
     display: flex;
-    /* background-color: pink; */
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1080px) {
     .prediction_text {
         margin-top: 20px;
         padding: 0 0;
@@ -104,13 +97,11 @@
     }
 
     .prediction_input_container {
-        /* background-color: pink; */
         width: 40vw;
         box-sizing: border-box;
     }
 
     .prediction_input_fields {
-        /* background-color: pink; */
         width: 40vw;
         display: flex;
     }
@@ -120,7 +111,6 @@
     }
 
     .prediction_text {
-        /* padding: 40px; */
         margin-right: auto;
         margin-left: auto;
         padding-right: 0;
@@ -132,7 +122,7 @@
     }
 
     .Sales_box {
-        width: 20vw;
+        width: 15vw;
     }
 
 }
@@ -152,7 +142,6 @@
     }
 
     .prediction_text {
-        /* padding: 40px; */
         padding: 0;
         margin-right: 0;
         margin-left: 0;
@@ -162,37 +151,28 @@
 
     .inputfield {
         width: 30vw;
-        /* background-color: purple; */
     }
 
     .Sales_box {
-        /* background-color: purple; */
         width: 30vw;
     }
 
     .prediction_input_fields {
-        /* background-color: pink; */
         width: 30vw;
         display: flex;
     }
 
     .prediction_input_container {
-        /* background-color: pink; */
         width: 30vw;
         box-sizing: border-box;
     }
 
     .dropdown {
         width: 50vw;
-        /* background-color: pink;  */
-
     }
 
     .buttons-dataset {
-        /* background-color: pink; */
-        /* align-items: left; */
         text-align: left;
-        /* padding-left: 40px; */
         margin-left: 10vw;
         margin-bottom: 20px;
     }

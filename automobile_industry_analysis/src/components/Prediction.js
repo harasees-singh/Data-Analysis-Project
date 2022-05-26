@@ -20,8 +20,7 @@ import LinearRegression from "./LinearRegression";
 
 function Prediction() {
 
-    /////////////////////////////////////////
-
+    // error = true triggers the red outlining in the respective input field
     const [errorPeakrpm, seterrorPeakrpm] = React.useState(false)
     const [errorEnginesize, seterrorEnginesize] = React.useState(false)
     const [errorCurbweight, seterrorCurbweight] = React.useState(false)
@@ -30,6 +29,9 @@ function Prediction() {
     const [errorHighwaymileage, seterrorHighwaymileage] = React.useState(false)
     const [errorPrice, seterrorPrice] = React.useState(false)
 
+    ///////////////////////////////////////
+
+    // default values before user input
     const [values, setValues] = React.useState({
         curbweight: 2000,
         enginesize: 200,
@@ -45,6 +47,9 @@ function Prediction() {
     };
     /////////////////////////////////////////
 
+    /////////////////////////////////////////
+
+    // setting default values for dropdowns and initializing handle functions
     const [fuel, setFuel] = React.useState('gas');
     const handleFuel = (event) => {
         setFuel(event.target.value);
@@ -86,10 +91,7 @@ function Prediction() {
     }
 
     const [sales, setSales] = React.useState(0);
-
-    const handleSales = (event) => {
-        setSales(event);
-    };
+    /////////////////////////////////////////////
 
     return (
         <div className='prediction_box'>
@@ -108,6 +110,7 @@ function Prediction() {
             </div>
             <div className='prediction_text'>
                 <div className="dropdown">
+                    {/* render the dropdowns */}
                     <Form key={0} option={fuel} handleChange={handleFuel} menuops={fueltypes} name={"fuel"} />
                     <Form key={1} option={engine} handleChange={handleEngine} menuops={enginetypes} name={"engine"} />
                     <Form key={2} option={fuelsystem} handleChange={handleFuelSystem} menuops={fuelsystemtypes} name={"fuelsystem"} />
@@ -119,10 +122,14 @@ function Prediction() {
 
                     <div className='buttons-dataset'>
                         <Button variant="contained" color="primary"  onClick={() => {
-                            
-                            let terminate = false
 
+                            // once the user clicks on this button we trigger setSales function to update the predicted sales according to the input
+                            
+                            let terminate = false // terminate is set to true if any invalid input is found
+                            
+                            // validating all inputs
                             if(! (/^[-+]?(\d+|Infinity)$/.test(values.peakrpm))){
+                                // in case value is invalid, trigger seterror function to red-outline the invalid value and set terminate to true
                                 seterrorPeakrpm(true)
                                 terminate = true
                             }
@@ -164,8 +171,13 @@ function Prediction() {
                             }
                             else seterrorPrice(false)
                             
-                            if(terminate) return;
-
+                            // incase any value was invalid, terminate will be set to true and we can update sales to 0 and return;
+                            if(terminate){ 
+                                setSales(0) 
+                                return
+                            };
+                            
+                            // else we predict the sales using the Linear Regression model and update sales
                             setSales(LinearRegression([doornumber, values.curbweight, cylindernumber, values.enginesize, values.horsepower, values.peakrpm, values.citymileage, values.highwaymileage, values.price, fuel, aspiration, carbody, drivewheel, engine, fuelsystem]))
                         }}>
                             Predict
@@ -174,7 +186,7 @@ function Prediction() {
                 </div>
                 <div className="prediction_input_fields">
                     <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
-                        
+                        {/* render all the input fields */}
                         <TextForm value={values.curbweight} name={'curbweight'} unit={'kg'} error={errorCurbweight} handleChange={handleChange} />
 
                         <TextForm value={values.enginesize} name={'enginesize'} unit={'lt'} error={errorEnginesize} handleChange={handleChange} />
@@ -190,6 +202,7 @@ function Prediction() {
                         <TextForm value={values.price} name={'price'} unit={'USD'} error={errorPrice} handleChange={handleChange} />
 
                         <div className="Sales">
+                            {/* render the sales field */}
                             <TextField
                                 id="outlined"
                                 label="Predicted Sales"

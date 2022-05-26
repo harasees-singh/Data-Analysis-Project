@@ -1,12 +1,7 @@
 import './CSS/Row.css'
 function Row(props){
-    // console.log(props)
-    if(props.label == 'None'){
-        return(
-            <div></div>
-        )
-    }
     return(
+        // render the key value pair for the legend
         <div className="row">
             <div className="key">{props.label}-</div>
             <div className="value">{props.value}</div>

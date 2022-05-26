@@ -8,11 +8,12 @@ function TextForm(props) {
         <div className="prediction_Input_container">
             <FormControl sx={{ m: 1, width: '19vw' }} variant="outlined">
                 <OutlinedInput
-                    value={props.value}
-                    onChange={props.handleChange(props.name)}
-                    endAdornment={<InputAdornment position="end">{props.unit}</InputAdornment>}
+                    value={props.value} // place the value from the props
+                    onChange={props.handleChange(props.name)} // handle change function is common for all the inputfields just pass in the
+                    // valid feature name
+                    endAdornment={<InputAdornment position="end">{props.unit}</InputAdornment>} // units of measurement
                     className='inputfield'
-                    error={props.error}
+                    error={props.error} // if props.error is true red-outlining will be triggered
                 />
                 <FormHelperText>Please enter {props.name}</FormHelperText>
             </FormControl>

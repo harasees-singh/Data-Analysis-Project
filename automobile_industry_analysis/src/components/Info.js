@@ -8,6 +8,7 @@ import "./CSS/Info.css";
 import { Pagination, Navigation } from "swiper";
 
 function Info(props) {
+    let x = 0;
     return (
         <Swiper
             pagination={{
@@ -16,9 +17,12 @@ function Info(props) {
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
+            // material ui defaults
         >
             {props.list.map((put)=>{
-                return(<SwiperSlide><div className="text">{put}</div></SwiperSlide>)
+                // pass in unique key prop to avoid re-rendering
+                // render the info inside the slider
+                return(<SwiperSlide key={x++}><div className="Info_text">{put}</div></SwiperSlide>)
             })}
         </Swiper>
         

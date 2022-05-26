@@ -24,9 +24,11 @@ function Form({ ...props }) {
                     className='inputfield'
                     
                 >
+                    {/* iterating over the menu options and rendering them in the dropdown menu */}
                     {props.menuops.map((option) => (
                         <MenuItem key={option.value} value={option.label}>
-                            <p className='leftalign'>{option.label}</p>
+                            <p key={option.value} className='leftalign'>{option.label}</p>
+                            {/* rendering the short form for the feature name like 'ohc' for Overhead Camshaft */}
                         </MenuItem>
                     ))}
                 </TextField>

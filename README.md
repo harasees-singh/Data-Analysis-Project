@@ -1,4 +1,5 @@
-# Data-Analysis-Project
+# Automobile Industry Analysis
+### Data Analytics Project by Harasees Singh, made as a prototype for Microsoft Engage'22 Mentorship Program.
 
 ## To run the application on your local machine do the following : 
 Please note that you will need node.js installed on your machine to run this project.

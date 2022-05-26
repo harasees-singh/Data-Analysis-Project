@@ -1,11 +1,9 @@
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import "./CSS/Header.css"
 import top from '../assets/images/final_top.jpg'
 function Header() {
     return (
         <div className='head'>
-
             <div className='vectors'>
                 <div className='photos'>
                     <img className='vectors-top' src={top} alt="svg" />
@@ -17,6 +15,7 @@ function Header() {
                     </div>
                     <div className='buttons'>
                         <Button variant="contained" color="primary" className='buttons-dataset'
+                            // link to the data set used in the project
                             href="https://1drv.ms/x/s!AkSxQvIzIp7WkYwOehfepRWpe56ZTQ?e=G2KtMA">
                             Data Set 
                         </Button>
