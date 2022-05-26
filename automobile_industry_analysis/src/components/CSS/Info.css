@@ -1,8 +1,9 @@
 .text{
     max-width: 75%;
-    font-size: 18px;
+    font-size: 17px;
     text-align: left;
     margin: 5px;
+    padding-bottom: 31px;
 }
 @media screen and (max-width: 1291px){
     .text{

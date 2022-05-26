@@ -1,7 +1,7 @@
 .leftalign{
     text-align: left;
     margin: 0;
-    max-width: 6vw;
+    width: 6vw;
 }
 .inputfield{
     max-width: 15vw;
@@ -9,7 +9,8 @@
 }
 @media screen and (max-width: 992px){
     .inputfield{
-        max-width: 30vw;
+        max-width: 45vw;
     }
+    
  }
  
