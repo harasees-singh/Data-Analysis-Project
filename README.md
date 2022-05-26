@@ -15,7 +15,7 @@ Any other queries you can think of
 ### To run the application on your local machine do the following : 
 Please note that you will need node.js installed on your machine to run this project.
 
-1. open the terminal in "Data Analysis Project" folder.
+1. open the terminal in `Data Analysis Project` folder.
 2. type `cd automobile_industry_analysis` in the terminal and press enter.
 3. type `npm i` in the terminal and press enter. Wait for the packages to download and install.
 4. finally enter `npm start` in the ternminal to run the app on port 3000.
@@ -29,8 +29,8 @@ link to the data set: <a href="https://1drv.ms/x/s!AkSxQvIzIp7WkYwOehfepRWpe56ZT
 One of the also use an additional <a href="https://www.factorywarrantylist.com/car-sales-by-country.html">list</a> of countrywise sales. This list is also present as a separate sheet in the above provided excel file.
 
 ## Data Cleaning
-Python's Pandas library has been used for data cleaning. All the code is present in ./data/data_cleaning.ipynb
-Some of the cars had missing sales data so those were removed from the data set to make another data set named 'dataset_after_cleaning/xlsx' present at ./data/Datasets/dataset_after_cleaning/xlsx 
+Python's Pandas library has been used for data cleaning. All the code is present in `./data/data_cleaning.ipynb`
+Some of the cars had missing sales data so those were removed from the data set to make another data set named `dataset_after_cleaning/xlsx` present at `./data/Datasets/dataset_after_cleaning/xlsx `
 
 ## Feature Engineering
 
@@ -41,11 +41,11 @@ Some of the cars had missing sales data so those were removed from the data set 
 3. identified each cluster as a customer segment based on it's unique feature sets.
 4. The following 5 customer segments were identified : 'Regular I', 'Regular II', 'Business', 'Luxury' and 'No Segment'. 
 5. The cars belonging to 'No Segment' are the ones which don't fit into any of the other 4 segments. These have the common property of relatively low sales. 
-#### All the code is present in ./data/model_training_K_Means.ipynb
+#### All the code is present in `./data/model_training_K_Means.ipynb`
 
 ## Sales Prediction with Linear Regression
 The Sales prediction feature is implemented on top of a Linear Regression model. The model was trained on the given dataset of 205 cars and uses a total of 15 features, like curbweight, doornumber, enginetype, fuel, etc. as independent variables that are linearly affecting the sales of the car which in this case is our dependent variable.
-#### All the code is present in ./data/linear_regression.ipynb
+#### All the code is present in `./data/linear_regression.ipynb`
 
 ## Data Modeling
 The React Application renders 5 Power BI reports each aimed at analysing the data from a different perspective (like sales, primary features, etc.). Power BI reports have been embedded into the webpage using the 'Publish to Web' service provided by Power BI. These embeds support fully interactive graphs and plots equipped with features like data slicing. All the inferences drawn from a particular Power BI report are summarized on it's side (on pc) or just below it (on phone). Each report consists of multiple dashboards. The slider window contains one slide for each dashboard in the same order. Therefore to view the inferences for a certain dashboard number (let's say x) the user needs to navigate to the same slide number (that is x) in the slider window. Each report is also accompained by a description on top of the inferences slider window which provides a basic insight into the objective of the report.
