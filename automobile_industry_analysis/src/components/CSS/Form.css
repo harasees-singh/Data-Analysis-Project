@@ -5,7 +5,6 @@
 }
 .inputfield{
     max-width: 15vw;
-    /* background-color: pink; */
 }
 @media screen and (max-width: 992px){
     .inputfield{
