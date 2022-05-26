@@ -1,5 +1,5 @@
 # Microsoft Engage 2022
-# <img src="./automobile_industry_analysis/src/assets/images/md.png" alt="MarineGEO circle logo" style="height: 400px; width:auto;"/>
+# <img src="./automobile_industry_analysis/src/assets/images/md.png" alt="MarineGEO circle logo" style="height: auto; width:auto;"/>
 ## The Challenge
 Develop an application to demonstrate how the Automotive Industry could harness data to take informed decisions. Demonstrate the use of data analytics in identifying:
 Customer segments, Most popular car specification combination (engine type, fuel, mileage, etc), Right time to launch a new car, etc
