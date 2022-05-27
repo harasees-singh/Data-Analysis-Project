@@ -8,7 +8,7 @@ Any other queries you can think of
 * I divided the project into 3 phases : research, basic working prototype, addition of features.
 * In the research phase I began by selecting a dataset from <a href="https://www.kaggle.com">Kaggle</a>. Then I learnt how to use Power BI and plotted some basic graphs to try out different possibilities.
 * In the second phase, I started developing the React app. I started with the data analysis part simultaneously as well. I made some basic reports on Power BI and embedded them into the React application. I divided the cars into 5 customer segments using the K-Means algorithm. By the end of this phase I had a working application with a responsive front-end.
-* In the last phase I completed all the 5 reports and started out with the Sales Prediction part. After some research I was able to implement Linear Regression to predict sales based on independent input variables.
+* In the last phase I completed all the 5 reports and started out with the Sales Prediction part. After some research I was able to implement Multivariate Linear Regression to predict sales based on independent input variables.
 * Once the model was working I implemented basic functionalities in javascript to compute the expected sales using the Linear Regression model when the user provides car specifications.
 
 
@@ -60,3 +60,7 @@ The web application is built on <a href="https://reactjs.org/">React.js</a> whic
 
 ### Python 
 Python provides a vast number of inbuilt libraries which are extensively used for Data Analysis and Machine Learning. This project makes use of <a href="https://scikit-learn.org/stable/">sklearn</a>, <a href="https://numpy.org/">numpy</a> and <a href="https://pandas.pydata.org/">pandas</a>. Pandas was used for data cleaning, feature engineering and model training. Linear Regression was implemented using the sklearn library. 
+
+## Future Scope
+* I would like to analyse real-time data. At present the dashboards are static in the sense that they would not automatically update in case the dataset changes. I would like to automate data visualization so that the dashboards update whenever a change in the databse is reported.
+* In the future I plan on improving the 'PREDICT SALES' feature by implementing an Artificial Neural Network instead of a Linear Regression Model to increase the accuracy of predictions.
