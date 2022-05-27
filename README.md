@@ -19,6 +19,7 @@ Please note that you will need node.js installed on your machine to run this pro
 2. type `cd automobile_industry_analysis` in the terminal and press enter.
 3. type `npm i` in the terminal and press enter. Wait for the packages to download and install.
 4. finally enter `npm start` in the ternminal to run the app on port 3000.
+#### <a href="https://docs.google.com/presentation/d/1tpy3Z0-a0fBMpMUjkfRq4Bi7AqtGrSwxkuMg5zLHYow/edit#slide=id.g12ee9b2f83d_0_540">Presentation</a> explaining the basic features of the application.
 
 ## Data Set
 ### This project uses a data set consisting of various features like price, sales, horsepower, curbweight, mileage, etc. of 205 cars. 
