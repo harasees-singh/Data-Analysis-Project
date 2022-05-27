@@ -28,9 +28,12 @@ link to the data set: <a href="https://1drv.ms/x/s!AkSxQvIzIp7WkYwOehfepRWpe56ZT
 
 One of the also use an additional <a href="https://www.factorywarrantylist.com/car-sales-by-country.html">list</a> of countrywise sales. This list is also present as a separate sheet in the above provided excel file.
 
+## Data Collecting
+The dataset found on Kaggle did not have sales data, so I added the sales data corresponding to each car from <a href="https://carsalesbase.com/">Carsalesbase</a>
+
 ## Data Cleaning
 Python's Pandas library has been used for data cleaning. All the code is present in `./data/data_cleaning.ipynb`
-Some of the cars had missing sales data so those were removed from the data set to make another data set named `dataset_after_cleaning/xlsx` present at `./data/Datasets/dataset_after_cleaning/xlsx `
+Some of the cars had missing sales data so those were removed from the data set
 
 ## Feature Engineering
 
