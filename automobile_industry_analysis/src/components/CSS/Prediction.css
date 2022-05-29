@@ -86,6 +86,9 @@
 }
 
 @media screen and (max-width: 1080px) {
+    .buttons-dataset{
+        padding-bottom: 20px;
+    }
     .prediction_text {
         margin-top: 20px;
         padding: 0 0;
@@ -123,10 +126,15 @@
 
     .Sales_box {
         width: 15vw;
+
     }
 
 }
-
+@media screen and (max-width: 992px){
+    .Sales_box{
+        width: 20vw;
+    }
+}
 @media screen and (max-width: 620px) {
     .prediction_heading {
         display: block;
@@ -175,5 +183,8 @@
         text-align: left;
         margin-left: 10vw;
         margin-bottom: 20px;
+    }
+    .Sales{
+        width: 20vw;
     }
 }
