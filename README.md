@@ -27,7 +27,7 @@ Please note that you will need node.js installed on your machine to run this pro
 
 link to the data set: <a href="https://1drv.ms/x/s!AkSxQvIzIp7WkYwOehfepRWpe56ZTQ?e=G2KtMA">Data Set</a>
 
-One of the also use an additional <a href="https://www.factorywarrantylist.com/car-sales-by-country.html">list</a> of countrywise sales. This list is also present as a separate sheet in the above provided excel file.
+One of the reports also uses an additional <a href="https://www.factorywarrantylist.com/car-sales-by-country.html">list</a> of countrywise sales. This list is also present as a separate sheet in the above provided excel file.
 
 ## Data Collecting
 The dataset found on Kaggle did not have sales data, so I added the sales data corresponding to each car from <a href="https://carsalesbase.com/">Carsalesbase</a>
@@ -52,19 +52,19 @@ The Sales prediction feature is implemented on top of a Linear Regression model.
 #### All the code is present in `./data/linear_regression.ipynb`
 
 ## Data Modeling
-The React Application renders 5 Power BI reports each aimed at analysing the data from a different perspective (like sales, primary features, etc.). Power BI reports have been embedded into the webpage using the 'Publish to Web' service provided by Power BI. These embeds support fully interactive graphs and plots equipped with features like data slicing. All the inferences drawn from a particular Power BI report are summarized on it's side (on pc) or just below it (on phone). Each report consists of multiple dashboards. The slider window contains one slide for each dashboard in the same order. Therefore to view the inferences for a certain dashboard number (let's say x) the user needs to navigate to the same slide number (that is x) in the slider window. Each report is also accompained by a description on top of the inferences slider window which provides a basic insight into the objective of the report.
+The React Application renders 5 Power BI reports each aimed at analysing the data from a different perspective (like sales, primary features, etc.). Power BI reports have been embedded into the webpage using the 'Publish to Web' service provided by Power BI. These embeds support fully interactive graphs and plots equipped with features like data slicing. All the inferences drawn from a particular Power BI dashboard are summarized on it's side (on pc) or just below it (on phone). Each report consists of multiple dashboards (22 in total). The slider window contains one slide for each dashboard in the same order. Therefore to view the inferences for a certain dashboard number (let's say x) the user needs to navigate to the same slide number (that is x) in the slider window. Each report is also accompained by a description on top of the inferences slider window which provides a basic insight into the objective of the report.
 
 ## Which Technology and Why
 
 ### React.js
-The web application is built on <a href="https://reactjs.org/">React.js</a> which is javascript library. React provides with efficient ways to create interactive UIs and renders just the right components when the data changes. Partitioning the code into components helps in debugging. Instead of rewriting the code for each report, the same report component is re-rendered with different props (which are like arguments in a function) using react. 
+The web application is built on <a href="https://reactjs.org/">React.js</a> which is JavaScript library. React provides with efficient ways to create interactive UIs and renders just the right components when the data changes. Partitioning the code into components helps in debugging. Instead of rewriting the code for each report, the same report component is re-rendered with different props (which are like arguments in a function) using react. 
 
 ### Power BI
 <a href="https://powerbi.microsoft.com/en-au/">Power BI</a> is a data visualization tool and an industry standard for plotting interactive graphs to analyse data. All the reports were prepared in Power BI and then published on to the web and then embedded in the React application. These reports are interactive and provide a deep insight into the data.
 
 ### Python 
-Python provides a vast number of inbuilt libraries which are extensively used for Data Analysis and Machine Learning. This project makes use of <a href="https://scikit-learn.org/stable/">sklearn</a>, <a href="https://numpy.org/">numpy</a> and <a href="https://pandas.pydata.org/">pandas</a>. Pandas was used for data cleaning, feature engineering and model training. Linear Regression was implemented using the sklearn library. 
+Python provides a vast number of inbuilt libraries which are extensively used for Data Analysis and Machine Learning. This project makes use of <a href="https://scikit-learn.org/stable/">sklearn</a>, <a href="https://numpy.org/">numpy</a> and <a href="https://pandas.pydata.org/">pandas</a>. Pandas was used for data cleaning, feature engineering and model training. Multivariate Linear Regression was implemented using the sklearn library. 
 
 ## Future Scope
 * I would like to analyse real-time data. At present the dashboards are static in the sense that they would not automatically update in case the dataset changes. I would like to automate data visualization so that the dashboards update whenever a change in the databse is reported.
-* In the future I plan on improving the 'PREDICT SALES' feature by implementing an Artificial Neural Network instead of a Linear Regression Model to increase the accuracy of predictions.
+* In the future I plan on improving the 'PREDICT SALES' feature by implementing an Artificial Neural Network instead of a Multivariate Linear Regression Model to increase the accuracy of predictions.
