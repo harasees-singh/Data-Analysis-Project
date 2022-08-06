@@ -18,7 +18,7 @@ export default[
         
         "cars using mpfi tend to be more expensive than others, offering higher horsepower.4bbl is not looking like a good option because of poor average mileage and below average horsepower at a rather high price. For example spfi costs similar to 4bbl and delivers way better mileage and similar hp."],
         
-        report: <iframe className="report" title="primary features final - curbweight" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjc4NjkwZDYtMDY1My00YjA1LWFiZDQtMDA2MjU4YmRkM2RiIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9" frameBorder="0" allowFullScreen={true}></iframe>
+        report: <iframe className="report" title="primary features final - curbweight" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZTRjMGVlNWEtY2QwMC00NWJmLWE3NGYtOTkzYTk1NThhNjMzIiwidCI6ImU1NzJlNzBjLTRkMGItNDM4Ny1hZWJkLTRiNWE5NmYzMmYyMiJ9" frameborder="0" allowFullScreen="true"></iframe>
     },
 
     {
@@ -36,7 +36,7 @@ export default[
         "After the price point of ~16k USD it is clear that cars belonging to the Regular and Business Segments lose majority of their sales and the Luxury cars start dominating. Also the Business Segment turns out to be very niche in terms of the price segment and Regular Segment outperforms it in terms of sales even in that very segment. Finally it is clear from the number of car sales that cars belonging to no particular segment (or the 'No Segment') suffer tremendously. This is because they fail to appeal to any customer segment."
     ],
 
-        report: <iframe className='report' title="Customer Segments final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTBlOWMzMzktMWNjMy00ZmJiLTg4MjctNGMyMjAwZTc3NDY4IiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
+        report: <iframe className="report" title="Customer Segments final - Count of cars by Customer Segment and Carbody / Enginetype" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTY3NTI4YmUtNjAzMi00MmJlLTk2MmYtNTE0YWQ5MjAyMGE1IiwidCI6ImU1NzJlNzBjLTRkMGItNDM4Ny1hZWJkLTRiNWE5NmYzMmYyMiJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
     },
 
     {
@@ -55,7 +55,7 @@ export default[
         "Standard aspiration is clearly the most popular aspiration type with all the top 10 cars featuring std aspiration. Only the Luxury segment's top 10 cars feature some amount of Turbo sales. While fwd seems to be the popular drivewheel option, all the Luxury segment cars feature rwd and 4wd dominates in the Business segment"
     ],
 
-        report: <iframe className='report' title="Popular Car Specifications" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjJmM2M0NGYtMjViMi00ODljLWE2ZmMtYjUzMzJjZGYzZjE4IiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
+        report: <iframe className="report" title="Popular Car Specifications - Top 10 cars by Sales" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMDI0M2FlZDQtZTMxZi00ZDk0LWE1ZTUtYWU2YmVjZGFmOTNjIiwidCI6ImU1NzJlNzBjLTRkMGItNDM4Ny1hZWJkLTRiNWE5NmYzMmYyMiJ9" frameborder="0" allowFullScreen="true"></iframe>
     },
     {
         id: 3,
@@ -68,7 +68,7 @@ export default[
         
         "While hardtops doubled their sales going from 2018 to 2019, wagons have lost half of their sales going from 2018 to 2020. Standard aspiration car sales quickly recovered after the drop in 2020 but Turbo sales didn't recover."],
 
-        report: <iframe className='report' title="year wise sales final" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMThlMDI3NTQtM2VkOC00NjI2LThjNzgtNmU5M2ZjNWUwNWUxIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSectionaa9160c08869bcb2862e" frameBorder="0" allowFullScreen={true}></iframe>
+        report: <iframe className="report" title="year wise sales final - carbody type and aspiration" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDUyMmYxNGMtOTEzYy00NDgyLTkzNzAtNGUxMTFmNWViMWJkIiwidCI6ImU1NzJlNzBjLTRkMGItNDM4Ny1hZWJkLTRiNWE5NmYzMmYyMiJ9" frameborder="0" allowFullScreen="true"></iframe>
     },
     {
         id: 4,
@@ -81,6 +81,6 @@ export default[
     
         ],
 
-        report: <iframe className='report' title="Global Sales" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMWUyOWVmNmUtYjU0YS00ODFmLWE4NmItOGQ0NjQwZmJjYzhkIiwidCI6ImE0ZjIzNDc2LWQwMmYtNDJkYS05Y2FjLTBjZWNiYTU3MmNlOSJ9&pageName=ReportSection" frameBorder="0" allowFullScreen={true}></iframe>
+        report: <iframe className='report' title="Global Sales - Country wise Sales 2021" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNGQxOTZjMTQtYmIxNy00MWRlLTgxMTQtZDdhMzRiYTA2MWM0IiwidCI6ImU1NzJlNzBjLTRkMGItNDM4Ny1hZWJkLTRiNWE5NmYzMmYyMiJ9" frameborder="0" allowFullScreen="true"></iframe>
     }
 ]
